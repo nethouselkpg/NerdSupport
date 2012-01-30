@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NerdDinnerModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="NerdDinnerModelStoreContainer">
+    <EntitySet Name="Dinners" EntityType="NerdDinnerModel.Store.Dinners" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RSVP" EntityType="NerdDinnerModel.Store.RSVP" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_RSVP_Dinners" Association="NerdDinnerModel.Store.FK_RSVP_Dinners">
+      <End Role="Dinners" EntitySet="Dinners" />
+      <End Role="RSVP" EntitySet="RSVP" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Dinners">
+    <Key>
+      <PropertyRef Name="DinnerID" />
+    </Key>
+    <Property Name="DinnerID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="EventDate" Type="datetime" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="HostedById" Type="nvarchar" MaxLength="256" />
+    <Property Name="HostedBy" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="ContactPhone" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Country" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Latitude" Type="float" Nullable="false" />
+    <Property Name="Longitude" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RSVP">
+    <Key>
+      <PropertyRef Name="RsvpID" />
+    </Key>
+    <Property Name="RsvpID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DinnerID" Type="int" Nullable="false" />
+    <Property Name="AttendeeName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="AttendeeNameId" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <Association Name="FK_RSVP_Dinners">
+    <End Role="Dinners" Type="NerdDinnerModel.Store.Dinners" Multiplicity="1" />
+    <End Role="RSVP" Type="NerdDinnerModel.Store.RSVP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dinners">
+        <PropertyRef Name="DinnerID" />
+      </Principal>
+      <Dependent Role="RSVP">
+        <PropertyRef Name="DinnerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="DistanceBetween" ReturnType="float" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lat1" Type="float" Mode="In" />
+    <Parameter Name="Long1" Type="float" Mode="In" />
+    <Parameter Name="Lat2" Type="float" Mode="In" />
+    <Parameter Name="Long2" Type="float" Mode="In" />
+  </Function>
+</Schema>
