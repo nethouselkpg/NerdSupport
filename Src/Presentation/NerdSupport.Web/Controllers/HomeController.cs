@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace NerdDinner.Controllers {
+namespace NerdSupport.Controllers {
 
     public class HomeController : Controller {
         private const string XrdsType = "application/xrds+xml";
