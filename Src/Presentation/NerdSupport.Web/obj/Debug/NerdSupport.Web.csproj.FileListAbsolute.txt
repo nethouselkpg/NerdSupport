@@ -1,0 +1,10 @@
+C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\bin\NerdSupport.dll
+C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\bin\NerdSupport.pdb
+C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\bin\antlr.runtime.dll
+C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\bin\DotNetOpenAuth.xml
+C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\bin\EntityFramework.xml
+C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\bin\PagedList.pdb
+C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\bin\PagedList.xml
+C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\obj\Debug\NerdSupport.dll
+C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\obj\Debug\NerdSupport.pdb

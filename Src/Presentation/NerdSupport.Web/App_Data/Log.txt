@@ -47,3 +47,4 @@
 2012-02-19T13:06:24.8954960Z - 5580 - Debug - Initialising redirection module
 2012-02-19T13:06:24.8954960Z - 5580 - Debug - Initialising redirection module event handlers
 2012-02-19T13:07:24.7074766Z - 5580 - Debug - Disposing Redirection Module
+2012-02-19T13:57:45.8360417Z - 5580 - Debug - Disposing Redirection Module

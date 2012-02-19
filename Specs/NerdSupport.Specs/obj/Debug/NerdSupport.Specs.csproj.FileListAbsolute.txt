@@ -1,0 +1,5 @@
+C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\bin\Debug\NerdSupport.Specs.dll
+C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\bin\Debug\NerdSupport.Specs.pdb
+C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\obj\Debug\NerdSupport.Specs.dll
+C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\obj\Debug\NerdSupport.Specs.pdb
