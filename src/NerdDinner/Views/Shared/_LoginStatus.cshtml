@@ -1,0 +1,10 @@
+﻿@using NerdDinner;
+
+
+@if(Request.IsAuthenticated) {
+  
+  <text>logged in</text>
+}
+else {
+    @:[ @Html.ActionLink("Log On", "LogOn", new { controller = "Account", returnUrl = HttpContext.Current.Request.RawUrl }) ]
+}
