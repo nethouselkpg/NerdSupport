@@ -19,20 +19,20 @@ namespace NerdSupport.Specs.Backlog
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.8.1.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class FarglaggningAvArendenIListaFeature
+    public partial class PrioriteringAvArendenFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "FarglaggningAvArendelista.feature"
+#line 1 "PrioriteringAvArende.feature"
 #line hidden
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("sv-SE"), "Färgläggning av ärenden i lista", "\r\nFör att kunna överskåda vad jag ska jobba med\r\nSom en handläggare\r\nSå vill jag " +
-                    "en färgkodad lista som hjälper mig att prioritera", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("sv-SE"), "Prioritering av arenden", "\r\nFör att undvika vite\r\nSom handläggare\r\nVill jag att prioriteringen av ärenden r" +
+                    "äknas ut åt mig", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -47,9 +47,9 @@ namespace NerdSupport.Specs.Backlog
         public virtual void TestInitialize()
         {
             if (((TechTalk.SpecFlow.FeatureContext.Current != null) 
-                        && (TechTalk.SpecFlow.FeatureContext.Current.FeatureInfo.Title != "Färgläggning av ärenden i lista")))
+                        && (TechTalk.SpecFlow.FeatureContext.Current.FeatureInfo.Title != "Prioritering av arenden")))
             {
-                NerdSupport.Specs.Backlog.FarglaggningAvArendenIListaFeature.FeatureSetup(null);
+                NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature.FeatureSetup(null);
             }
         }
         
@@ -69,54 +69,39 @@ namespace NerdSupport.Specs.Backlog
             testRunner.CollectScenarioErrors();
         }
         
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Ärende med prio 1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Färgläggning av ärenden i lista")]
-        public virtual void ArendeMedPrio1()
+        public virtual void FeatureBackground()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ärende med prio 1", new string[] {
-                        "arendelista",
-                        "currentiteration"});
 #line 9
-this.ScenarioSetup(scenarioInfo);
-#line 10
- testRunner.Given("ett ärende med prio 1");
-#line 11
- testRunner.And("att prio 1 kodas med röd färg");
-#line 12
- testRunner.When("handläggaren listar ärenden");
-#line 13
- testRunner.Then("har ärendet röd färg");
 #line hidden
-            this.ScenarioCleanup();
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Namn",
+                        "Prioritering"});
+            table1.AddRow(new string[] {
+                        "Tid",
+                        "3"});
+            table1.AddRow(new string[] {
+                        "Pris",
+                        "1"});
+            table1.AddRow(new string[] {
+                        "VIP",
+                        "2"});
+#line 10
+testRunner.Given("att följande regler är kopplade till ett avtal", ((string)(null)), table1);
+#line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Sortering")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Färgläggning av ärenden i lista")]
-        public virtual void Sortering()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Alla regler är brutna")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Prioritering av arenden")]
+        public virtual void AllaReglerArBrutna()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sortering", ((string[])(null)));
-#line 16
-this.ScenarioSetup(scenarioInfo);
-#line hidden
-            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Ärende",
-                        "Prio"});
-            table1.AddRow(new string[] {
-                        "viktigt",
-                        "1"});
-            table1.AddRow(new string[] {
-                        "mindre",
-                        "2"});
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Alla regler är brutna", new string[] {
+                        "prioritering",
+                        "currentiteration"});
 #line 17
- testRunner.Given("följande ärenden", ((string)(null)), table1);
-#line 23
- testRunner.When("handläggaren listar ärenden");
-#line 24
- testRunner.Then("ska \"viktigt ärende\" vara överst");
-#line 25
- testRunner.And("\"minst viktigt ärende\" ska vara underst");
+this.ScenarioSetup(scenarioInfo);
+#line 9
+this.FeatureBackground();
 #line hidden
             this.ScenarioCleanup();
         }

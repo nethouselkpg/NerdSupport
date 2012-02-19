@@ -53,6 +53,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FarglaggningAvArendelista.feature</DependentUpon>
     </Compile>
+    <Compile Include="Backlog\PrioriteringAvArende.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrioriteringAvArende.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +65,10 @@
     <None Include="Backlog\FarglaggningAvArendelista.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>FarglaggningAvArendelista.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Backlog\PrioriteringAvArende.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PrioriteringAvArende.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

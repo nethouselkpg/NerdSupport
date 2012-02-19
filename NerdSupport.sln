@@ -24,6 +24,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{B9FEE2CE-480
 		Lib\TechTalk.SpecFlow.dll = Lib\TechTalk.SpecFlow.dll
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Domain.Model", "Src\Domain\NerdSupport.Domain.Model\NerdSupport.Domain.Model.csproj", "{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = NedSupport.vsmdi
@@ -41,6 +43,10 @@ Global
 		{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,5 +59,6 @@ Global
 		{CEA5FDDA-DDC6-4E59-A371-3516A04A8207} = {1DBCA4F3-159E-4911-A002-CE1D17A7996F}
 		{9EC5098E-98F5-49EA-88F1-55A029875FD5} = {40D43AC0-D2BE-4B37-82B3-310FC0FBAABA}
 		{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0} = {4AE1F120-A4A5-4804-BDE8-198E9C88851B}
+		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C} = {CEA5FDDA-DDC6-4E59-A371-3516A04A8207}
 	EndGlobalSection
 EndGlobal

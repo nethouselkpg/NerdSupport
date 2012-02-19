@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NerdSupport.Domain.Model.Arende">
+    <Position X="8.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Arende.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Avsandare" />
+      <Property Name="Handlaggare" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NerdSupport.Domain.Model.Avsandare">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Avsandare.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Foretag" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NerdSupport.Domain.Model.Foretag">
+    <Position X="8.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Foretag.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ServiceAvtal" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NerdSupport.Domain.Model.ServiceAvtal">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiceAvtal.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ServiceRegler" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NerdSupport.Domain.Model.ServiceRegel">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>ServiceRegel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PrioriteringsKlassifikation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NerdSupport.Domain.Model.PrioriteringsKlassifikation">
+    <Position X="3" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PrioriteringsKlassifikation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NerdSupport.Domain.Model.SupportBrev" Collapsed="true">
+    <Position X="6.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SupportBrev.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NerdSupport.Domain.Model.Handlaggare">
+    <Position X="10.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Handlaggare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
