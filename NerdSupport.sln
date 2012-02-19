@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Specs", "Specs\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{4AE1F120-A4A5-4804-BDE8-198E9C88851B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Web", "Src\Presentation\NerdSupport.Web\NerdSupport.Web.csproj", "{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Presentation..Web", "Src\Presentation\NerdSupport.Web\NerdSupport.Presentation..Web.csproj", "{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{CEA5FDDA-DDC6-4E59-A371-3516A04A8207}"
 EndProject
