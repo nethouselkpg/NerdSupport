@@ -48,18 +48,18 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Backlog\FärgläggningAvÄrendelista.feature.cs">
+    <Compile Include="Backlog\FarglaggningAvArendelista.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>FärgläggningAvÄrendelista.feature</DependentUpon>
+      <DependentUpon>FarglaggningAvArendelista.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Backlog\FärgläggningAvÄrendelista.feature">
+    <None Include="Backlog\FarglaggningAvArendelista.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>FärgläggningAvÄrendelista.feature.cs</LastGenOutput>
+      <LastGenOutput>FarglaggningAvArendelista.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

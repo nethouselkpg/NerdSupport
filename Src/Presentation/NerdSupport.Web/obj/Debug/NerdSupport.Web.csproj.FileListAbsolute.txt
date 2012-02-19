@@ -1,0 +1,5 @@
+C:\Projects\NerdSupport.nethouselkpg\src\Presentation\NerdSupport.Web\bin\NerdSupport.dll
+C:\Projects\NerdSupport.nethouselkpg\src\Presentation\NerdSupport.Web\bin\NerdSupport.pdb
+C:\Projects\NerdSupport.nethouselkpg\src\Presentation\NerdSupport.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\NerdSupport.nethouselkpg\src\Presentation\NerdSupport.Web\obj\Debug\NerdSupport.dll
+C:\Projects\NerdSupport.nethouselkpg\src\Presentation\NerdSupport.Web\obj\Debug\NerdSupport.pdb
