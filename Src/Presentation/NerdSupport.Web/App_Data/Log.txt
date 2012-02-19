@@ -141,3 +141,22 @@
 2012-02-19T19:50:38.4441195Z - 4396 - Debug - Disposing Redirection Module
 2012-02-19T19:50:38.4441195Z - 4396 - Debug - Disposing Redirection Module
 2012-02-19T19:50:38.4441195Z - 4396 - Debug - Disposing Redirection Module
+2012-02-19T19:52:58.9061195Z - 4396 - Debug - Getting 'fiftyOne/redirect' configuration from file 'C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\51Degrees.mobi.config'.
+2012-02-19T19:52:58.9111195Z - 4396 - Debug - Constructing MobileCapabilitiesProvider - Default
+2012-02-19T19:52:59.3211195Z - 4396 - Debug - Initialising redirection module
+2012-02-19T19:52:59.3241195Z - 4396 - Debug - Initialising redirection module static fields.
+2012-02-19T19:52:59.3241195Z - 4396 - Debug - Initialising redirection module event handlers
+2012-02-19T19:52:59.3361195Z - 4396 - Debug - Getting 'fiftyOne/wurfl' configuration from file 'C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\51Degrees.mobi.config'.
+2012-02-19T19:53:01.7321195Z - 4396 - Info - Loaded 13925 devices using 11786 strings in 373ms
+2012-02-19T19:53:03.5741195Z - 4396 - Debug - Initialising redirection module
+2012-02-19T19:53:03.5741195Z - 4396 - Debug - Initialising redirection module event handlers
+2012-02-19T19:53:03.5741195Z - 4396 - Debug - Initialising redirection module
+2012-02-19T19:53:03.5741195Z - 4396 - Debug - Initialising redirection module event handlers
+2012-02-19T19:53:03.5861195Z - 4396 - Debug - Initialising redirection module
+2012-02-19T19:53:03.5861195Z - 4396 - Debug - Initialising redirection module event handlers
+2012-02-19T19:53:03.5861195Z - 4396 - Debug - Initialising redirection module
+2012-02-19T19:53:03.5861195Z - 4396 - Debug - Initialising redirection module event handlers
+2012-02-19T19:53:58.4681195Z - 4396 - Debug - Disposing Redirection Module
+2012-02-19T19:54:28.4791195Z - 4396 - Debug - Disposing Redirection Module
+2012-02-19T19:54:58.4921195Z - 4396 - Debug - Disposing Redirection Module
+2012-02-19T19:55:28.5078490Z - 4396 - Debug - Disposing Redirection Module
