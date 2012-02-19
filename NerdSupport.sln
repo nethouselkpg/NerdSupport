@@ -3,8 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E3CA68E7-7F36-4C56-8012-254BAEAE36F4}"
 	ProjectSection(SolutionItems) = preProject
-		NerdDinner.testsettings = NerdDinner.testsettings
-		NerdDinner.vsmdi = NerdDinner.vsmdi
+		NedSupport.vsmdi = NedSupport.vsmdi
+		NerdSupport.testsettings = NerdSupport.testsettings
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{1DBCA4F3-159E-4911-A002-CE1D17A7996F}"
@@ -17,9 +17,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Web", "Src\Presentation\NerdSupport.Web\NerdSupport.Web.csproj", "{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{CEA5FDDA-DDC6-4E59-A371-3516A04A8207}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{B9FEE2CE-4805-4DAE-8B90-84BD861A45A1}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\TechTalk.SpecFlow.dll = Lib\TechTalk.SpecFlow.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = NerdDinner.vsmdi
+		CategoryFile = NedSupport.vsmdi
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,8 +48,10 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1DBCA4F3-159E-4911-A002-CE1D17A7996F} = {E3CA68E7-7F36-4C56-8012-254BAEAE36F4}
 		{40D43AC0-D2BE-4B37-82B3-310FC0FBAABA} = {E3CA68E7-7F36-4C56-8012-254BAEAE36F4}
+		{B9FEE2CE-4805-4DAE-8B90-84BD861A45A1} = {E3CA68E7-7F36-4C56-8012-254BAEAE36F4}
 		{4AE1F120-A4A5-4804-BDE8-198E9C88851B} = {1DBCA4F3-159E-4911-A002-CE1D17A7996F}
-		{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0} = {4AE1F120-A4A5-4804-BDE8-198E9C88851B}
+		{CEA5FDDA-DDC6-4E59-A371-3516A04A8207} = {1DBCA4F3-159E-4911-A002-CE1D17A7996F}
 		{9EC5098E-98F5-49EA-88F1-55A029875FD5} = {40D43AC0-D2BE-4B37-82B3-310FC0FBAABA}
+		{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0} = {4AE1F120-A4A5-4804-BDE8-198E9C88851B}
 	EndGlobalSection
 EndGlobal
