@@ -18,7 +18,7 @@ namespace NerdSupport.Presentation.Web.Controllers {
             // Other Providers don't say they're performing RP discovery, so always include an HTTP header to help them.
             if (Response != null)
                 Response.AppendHeader("X-XRDS-Location", Url.Action("Xrds"));
-
+            
             return View();
         }
 

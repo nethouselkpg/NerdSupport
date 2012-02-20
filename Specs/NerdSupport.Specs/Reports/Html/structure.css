@@ -1,0 +1,169 @@
+/*************************************************************************
+ * Entire body
+ *************************************************************************/
+
+#container
+{
+  width: 90%;
+  margin: 10px auto;
+  color: #333;
+  border: 1px solid gray;
+  line-height: 130%;
+  background-color: #f2f2f2;
+  -moz-box-shadow: 5px 5px 5px #ccc;
+  -webkit-box-shadow: 5px 5px 5px #ccc;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+/*************************************************************************
+ * Header/Top
+ *************************************************************************/
+
+#top
+{
+  padding: .5em;
+  border-bottom: 1px solid gray;
+}
+
+#top h1
+{
+  padding: 0;
+  margin: 0;
+}
+
+/*************************************************************************
+ * Table of Contents
+ *************************************************************************/
+
+#toc
+{
+  float: left;
+  width: auto;
+  margin-right: auto;
+  border-right: 1px solid gray;
+  max-width: 20em;
+}
+
+#toc p 
+{ 
+  margin: 0 0 1em 0; 
+}
+
+#toc ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;  }
+  #toc ul li a {
+    text-decoration: none; }
+  #toc ul li a:hover {
+    text-decoration: underline; }
+    
+#toc .directory {
+  padding: 5px 10px 6px;
+  background: #F9F9f9;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #fff;
+  font-weight: bold;
+}
+#toc .file {
+  padding: 3px 10px 4px;
+  border-bottom: 1px solid #E8E8e8;
+}
+
+/*************************************************************************
+ * Feature and Markdown
+ *************************************************************************/
+
+#feature, #markdown
+{
+  overflow:hidden;
+  margin-left: auto;
+  padding: 1em;
+}
+
+#feature h1, #feature h2, #markdown h1, #markdown h2
+{ 
+  margin: 0 0 .5em 0;
+  line-height: 105%;
+}
+
+/*************************************************************************
+ * Feature - formatting tables (example or step tables)
+ *************************************************************************/
+    
+#feature .table_container { margin: 8px 0px 8px 0px; }
+#feature table {
+  border-collapse: collapse;
+  margin: 0;
+  empty-cells: show; }
+  #feature th, td {
+    border: 1px solid black;
+    padding: 3px; }
+  #feature td {
+    background-color: white;
+    vertical-align: top; }
+  #feature th { 
+    background-color: #C3D9FF; }
+
+/*************************************************************************
+ * Feature - formatting scenarios and steps
+ *************************************************************************/
+
+ul#scenarios {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; } 
+li.scenario {
+  padding: 2px 12px 6px 12px;
+  border: 1px solid #C3D9FF;
+  margin: 6px 0px 28px 0px;
+  background-color: #F5F9FD; }
+
+/*************************************************************************
+ * Feature - Formatting the docStrings
+ *************************************************************************/
+
+.step pre 
+{
+  background-color: #E0F8E0;
+  font-size: 0.85em;
+  border-color: #fff;
+  margin: 0.5em 0 0.5em 1.2em;
+  overflow: auto; 
+}
+
+.step pre code 
+{
+  font:0.95em 'monaco', 'lucida console', monospace;
+  display:block;
+  padding:.5em;
+  background:#000;
+  color:#f8f8f8 
+}
+
+/*************************************************************************
+ * Feature - Formatting the step keywords
+ *************************************************************************/
+
+.keyword {
+  font-weight: bold; }
+
+/*************************************************************************
+ * Footer
+ *************************************************************************/
+
+#footer
+{
+  clear : both;
+  margin : 0;
+  padding : .5em;
+  color: #333;
+  border-top : 1px solid gray;
+}
+
+#footer p 
+{
+  line-height: 100%;
+  margin: 0 0 3px 0;
+  padding: 0 0 3px 0;
+}

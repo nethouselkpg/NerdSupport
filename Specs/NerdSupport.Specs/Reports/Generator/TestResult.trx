@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2bcd657f-9058-47d6-a6da-56e24c86cfb3" name="jpersson@PC260 2012-02-20 22:46:34" runUser="GROUP\jpersson" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="419ff19e-5eb0-4953-81c6-47b06615e2f0">
+    <Deployment userDeploymentRoot="C:\projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Reports\Generator" useDefaultDeploymentRoot="false" runDeploymentRoot="jpersson_PC260 2012-02-20 22_46_34" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-20T22:46:34.2393334+01:00" queuing="2012-02-20T22:46:34.4833334+01:00" start="2012-02-20T22:46:34.5503334+01:00" finish="2012-02-20T22:46:35.0623334+01:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="3" executed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="3" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AllaReglerArBrutna" storage="../../bin/debug/nerdsupport.specs.dll" id="18da6446-ff3a-227f-dddf-1e2a341c0009">
+      <Description>Alla regler är brutna</Description>
+      <Execution id="d5b29b3d-705f-4ae0-a208-ffe65662d086" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Prioritering av arenden</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AllaReglerArBrutna" />
+    </UnitTest>
+    <UnitTest name="Sortering" storage="../../bin/debug/nerdsupport.specs.dll" id="c79ebf9f-724c-9fbf-1a69-30cc1180a049">
+      <Description>Sortering</Description>
+      <Execution id="777c7b28-b79a-4b4d-bbf1-f030ece5f36a" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Färgläggning av ärenden i lista</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.FarglaggningAvArendenIListaFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Sortering" />
+    </UnitTest>
+    <UnitTest name="ArendeMedPrio1" storage="../../bin/debug/nerdsupport.specs.dll" id="d37e4316-551f-ec59-2dae-752d0503e685">
+      <Description>Ärende med prio 1</Description>
+      <Execution id="62d1fd3a-9074-437b-baf8-cecc454bcc8d" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Färgläggning av ärenden i lista</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.FarglaggningAvArendenIListaFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ArendeMedPrio1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="d37e4316-551f-ec59-2dae-752d0503e685" executionId="62d1fd3a-9074-437b-baf8-cecc454bcc8d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c79ebf9f-724c-9fbf-1a69-30cc1180a049" executionId="777c7b28-b79a-4b4d-bbf1-f030ece5f36a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18da6446-ff3a-227f-dddf-1e2a341c0009" executionId="d5b29b3d-705f-4ae0-a208-ffe65662d086" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="62d1fd3a-9074-437b-baf8-cecc454bcc8d" testId="d37e4316-551f-ec59-2dae-752d0503e685" testName="ArendeMedPrio1" computerName="PC260" duration="00:00:00.0736888" startTime="2012-02-20T22:46:34.5623334+01:00" endTime="2012-02-20T22:46:34.9973334+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62d1fd3a-9074-437b-baf8-cecc454bcc8d">
+      <Output>
+        <StdOut>Givet ett ärende med prio 1
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"ett ärende med prio 1")]
+        public void GivetEttArendeMedPrio1()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Och att prio 1 kodas med röd färg
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"att prio 1 kodas med röd färg")]
+        public void GivetAttPrio1KodasMedRodFarg()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+När handläggaren listar ärenden
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [When(@"handläggaren listar ärenden")]
+        public void NarHandlaggarenListarArenden()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Så har ärendet röd färg
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Then(@"har ärendet röd färg")]
+        public void SaHarArendetRodFarg()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"att prio 1 kodas med röd färg")]
+    public void GivetAttPrio1KodasMedRodFarg()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"ett ärende med prio 1")]
+    public void GivetEttArendeMedPrio1()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"har ärendet röd färg")]
+    public void SaHarArendetRodFarg()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"handläggaren listar ärenden")]
+    public void NarHandlaggarenListarArenden()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at NerdSupport.Specs.Backlog.FarglaggningAvArendenIListaFeature.ScenarioCleanup() in C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\FarglaggningAvArendelista.feature.cs:line 0
+   at NerdSupport.Specs.Backlog.FarglaggningAvArendenIListaFeature.ArendeMedPrio1() in c:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\FarglaggningAvArendelista.feature:line 13
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="777c7b28-b79a-4b4d-bbf1-f030ece5f36a" testId="c79ebf9f-724c-9fbf-1a69-30cc1180a049" testName="Sortering" computerName="PC260" duration="00:00:00.0181354" startTime="2012-02-20T22:46:34.9993334+01:00" endTime="2012-02-20T22:46:35.0203334+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="777c7b28-b79a-4b4d-bbf1-f030ece5f36a">
+      <Output>
+        <StdOut>Givet följande ärenden
+  --- table step argument ---
+  | Ärende  | Prio |
+  | viktigt | 1    |
+  | mindre  | 2    |
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"följande ärenden")]
+        public void GivetFoljandeArenden(Table table)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+När handläggaren listar ärenden
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [When(@"handläggaren listar ärenden")]
+        public void NarHandlaggarenListarArenden()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Så ska "viktigt ärende" vara överst
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Then(@"ska ""viktigt ärende"" vara överst")]
+        public void SaSkaViktigtArendeVaraOverst()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Och "minst viktigt ärende" ska vara underst
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Then(@"""minst viktigt ärende"" ska vara underst")]
+        public void SaMinstViktigtArendeSkaVaraUnderst()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"följande ärenden")]
+    public void GivetFoljandeArenden(Table table)
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"""minst viktigt ärende"" ska vara underst")]
+    public void SaMinstViktigtArendeSkaVaraUnderst()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"ska ""viktigt ärende"" vara överst")]
+    public void SaSkaViktigtArendeVaraOverst()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"handläggaren listar ärenden")]
+    public void NarHandlaggarenListarArenden()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at NerdSupport.Specs.Backlog.FarglaggningAvArendenIListaFeature.ScenarioCleanup() in C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\FarglaggningAvArendelista.feature.cs:line 0
+   at NerdSupport.Specs.Backlog.FarglaggningAvArendenIListaFeature.Sortering() in c:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\FarglaggningAvArendelista.feature:line 25
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d5b29b3d-705f-4ae0-a208-ffe65662d086" testId="18da6446-ff3a-227f-dddf-1e2a341c0009" testName="AllaReglerArBrutna" computerName="PC260" duration="00:00:00.0127230" startTime="2012-02-20T22:46:35.0223334+01:00" endTime="2012-02-20T22:46:35.0403334+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d5b29b3d-705f-4ae0-a208-ffe65662d086">
+      <Output>
+        <StdOut>Givet att följande regler är kopplade till ett avtal
+  --- table step argument ---
+  | Namn | Prioritering |
+  | Tid  | 3            |
+  | Pris | 1            |
+  | VIP  | 2            |
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"att följande regler är kopplade till ett avtal")]
+        public void GivetAttFoljandeReglerArKoppladeTillEttAvtal(Table table)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Givet bla
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"bla")]
+        public void GivetBla()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+När handläggaren listar ärenden
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [When(@"handläggaren listar ärenden")]
+        public void NarHandlaggarenListarArenden()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Så har ärendet röd färg
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Then(@"har ärendet röd färg")]
+        public void SaHarArendetRodFarg()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"att följande regler är kopplade till ett avtal")]
+    public void GivetAttFoljandeReglerArKoppladeTillEttAvtal(Table table)
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"bla")]
+    public void GivetBla()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"har ärendet röd färg")]
+    public void SaHarArendetRodFarg()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"handläggaren listar ärenden")]
+    public void NarHandlaggarenListarArenden()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature.ScenarioCleanup() in C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\PrioriteringAvArende.feature.cs:line 0
+   at NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature.AllaReglerArBrutna() in c:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\PrioriteringAvArende.feature:line 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

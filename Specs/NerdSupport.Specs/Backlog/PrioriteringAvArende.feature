@@ -15,3 +15,6 @@ Givet att följande regler är kopplade till ett avtal
 | VIP  | 2			  |
 
 Scenario: Alla regler är brutna
+	Givet bla
+	När handläggaren listar ärenden
+	Så har ärendet röd färg

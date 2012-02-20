@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<TestSettings name="NerdDinner" id="a677183a-2241-46a2-8e6f-b1b8040dce34" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<TestSettings name="NerdSupport" id="a677183a-2241-46a2-8e6f-b1b8040dce34" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Description>These are default test settings for a local test run.</Description>
+  <NamingScheme baseName="NerdSupport" useDefault="false" />
   <Execution>
     <TestTypeSpecific>
       <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">

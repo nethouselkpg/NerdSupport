@@ -61,7 +61,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Backlog\FarglaggningAvArendelista.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>FarglaggningAvArendelista.feature.cs</LastGenOutput>
@@ -70,10 +72,16 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PrioriteringAvArende.feature.cs</LastGenOutput>
     </None>
+    <None Include="Reports\GenerateTestResult.bat" />
+    <None Include="Reports\Generate.ps1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CurrentIteration\" />
     <Folder Include="Done\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\ImplementationReport.html" />
+    <Content Include="Reports\StepDefinitionReport.html" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

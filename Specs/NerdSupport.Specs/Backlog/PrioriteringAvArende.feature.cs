@@ -102,6 +102,12 @@ testRunner.Given("att följande regler är kopplade till ett avtal", ((string)(n
 this.ScenarioSetup(scenarioInfo);
 #line 9
 this.FeatureBackground();
+#line 18
+ testRunner.Given("bla");
+#line 19
+ testRunner.When("handläggaren listar ärenden");
+#line 20
+ testRunner.Then("har ärendet röd färg");
 #line hidden
             this.ScenarioCleanup();
         }
