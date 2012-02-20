@@ -3,3 +3,8 @@ C:\Projects\NerdSupport.nethouselkpg\Src\Domain\NerdSupport.Domain.Model\bin\Deb
 C:\Projects\NerdSupport.nethouselkpg\Src\Domain\NerdSupport.Domain.Model\obj\Debug\ResolveAssemblyReference.cache
 C:\Projects\NerdSupport.nethouselkpg\Src\Domain\NerdSupport.Domain.Model\obj\Debug\NerdSupport.Domain.Model.dll
 C:\Projects\NerdSupport.nethouselkpg\Src\Domain\NerdSupport.Domain.Model\obj\Debug\NerdSupport.Domain.Model.pdb
+C:\Utveckling\NerdSupport\Src\Domain\NerdSupport.Domain.Model\bin\Debug\NerdSupport.Domain.Model.dll
+C:\Utveckling\NerdSupport\Src\Domain\NerdSupport.Domain.Model\bin\Debug\NerdSupport.Domain.Model.pdb
+C:\Utveckling\NerdSupport\Src\Domain\NerdSupport.Domain.Model\obj\Debug\ResolveAssemblyReference.cache
+C:\Utveckling\NerdSupport\Src\Domain\NerdSupport.Domain.Model\obj\Debug\NerdSupport.Domain.Model.dll
+C:\Utveckling\NerdSupport\Src\Domain\NerdSupport.Domain.Model\obj\Debug\NerdSupport.Domain.Model.pdb

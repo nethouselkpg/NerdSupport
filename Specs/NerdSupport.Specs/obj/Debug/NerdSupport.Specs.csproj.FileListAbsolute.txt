@@ -5,3 +5,10 @@ C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\obj\Debug\NerdSuppo
 C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\obj\Debug\NerdSupport.Specs.pdb
 C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\bin\Debug\NerdSupport.Specs.dll.config
 C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\bin\Debug\TechTalk.SpecFlow.dll
+C:\Utveckling\NerdSupport\Specs\NerdSupport.Specs\bin\Debug\NerdSupport.Specs.dll.config
+C:\Utveckling\NerdSupport\Specs\NerdSupport.Specs\bin\Debug\NerdSupport.Specs.dll
+C:\Utveckling\NerdSupport\Specs\NerdSupport.Specs\bin\Debug\NerdSupport.Specs.pdb
+C:\Utveckling\NerdSupport\Specs\NerdSupport.Specs\bin\Debug\TechTalk.SpecFlow.dll
+C:\Utveckling\NerdSupport\Specs\NerdSupport.Specs\obj\Debug\ResolveAssemblyReference.cache
+C:\Utveckling\NerdSupport\Specs\NerdSupport.Specs\obj\Debug\NerdSupport.Specs.dll
+C:\Utveckling\NerdSupport\Specs\NerdSupport.Specs\obj\Debug\NerdSupport.Specs.pdb
