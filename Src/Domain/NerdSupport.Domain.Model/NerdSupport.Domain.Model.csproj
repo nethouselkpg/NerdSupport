@@ -45,10 +45,13 @@
     <Compile Include="Foretag.cs" />
     <Compile Include="Handlaggare.cs" />
     <Compile Include="PrioriteringsKlassifikation.cs" />
+    <Compile Include="PrisServiceRegel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceAvtal.cs" />
     <Compile Include="ServiceRegel.cs" />
     <Compile Include="SupportBrev.cs" />
+    <Compile Include="TidServiceRegel.cs" />
+    <Compile Include="VipServiceRegel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ArendeModell.cd" />

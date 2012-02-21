@@ -35,7 +35,32 @@ $(document).ready(function() {
               </div>
               <div class="file">
                 <li>
+                  <a href="HittaEmailIInkorg.html">Filtrera e-mail i inkorg</a>
+                </li>
+              </div>
+              <div class="file">
+                <li>
                   <a href="#">Prioritering av arenden</a>
+                </li>
+              </div>
+              <div class="file">
+                <li>
+                  <a href="SkapaArendeFranEmail.html">Skapa ärende från e-mail</a>
+                </li>
+              </div>
+              <div class="file">
+                <li>
+                  <a href="SkapaArendeManuellt.html">Skapa ärende manuellt</a>
+                </li>
+              </div>
+              <div class="file">
+                <li>
+                  <a href="StangArende.html">Stäng ärende</a>
+                </li>
+              </div>
+              <div class="file">
+                <li>
+                  <a href="ValideraForetagIArende.html">Validera företag i ärende</a>
                 </li>
               </div>
             </ul>
@@ -72,22 +97,52 @@ Vill jag att prioriteringen av ärenden räknas ut åt mig</p>
             <div class="steps">
               <ul>
                 <li class="step">
-                  <span class="keyword">Givet </span>att följande regler är kopplade till ett avtal<div class="table_container"><table class="datatable"><thead><tr><th>Namn</th><th>Prioritering</th></tr></thead><tbody><tr><td>Tid</td><td>3</td></tr><tr><td>Pris</td><td>1</td></tr><tr><td>VIP</td><td>2</td></tr></tbody></table></div></li>
+                  <span class="keyword">Givet </span>att följande regler är kopplade till Nethouse avtal<div class="table_container"><table class="datatable"><thead><tr><th>Namn</th><th>Prioritetsklassificering</th></tr></thead><tbody><tr><td>Tid</td><td>3</td></tr><tr><td>Pris</td><td>1</td></tr><tr><td>VIP</td><td>2</td></tr></tbody></table></div></li>
               </ul>
             </div>
           </li>
           <li id="1" class="scenario">
+            <div class="scenario-heading">
+              <h2>En regel är bruten</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Givet </span>att VIP regeln bryts</li>
+                <li class="step">
+                  <span class="keyword">När </span>handläggaren granskar ärendets prioritet</li>
+                <li class="step">
+                  <span class="keyword">Så </span>är ärendets prioritetsklassificering 2</li>
+              </ul>
+            </div>
+          </li>
+          <li id="2" class="scenario">
             <div class="scenario-heading">
               <h2>Alla regler är brutna</h2>
             </div>
             <div class="steps">
               <ul>
                 <li class="step">
-                  <span class="keyword">Givet </span>bla</li>
+                  <span class="keyword">Givet </span>att alla regler är brutna</li>
                 <li class="step">
-                  <span class="keyword">När </span>handläggaren listar ärenden</li>
+                  <span class="keyword">När </span>handläggaren granskar ärendets prioritet</li>
                 <li class="step">
-                  <span class="keyword">Så </span>har ärendet röd färg</li>
+                  <span class="keyword">Så </span>är ärendets prioritetsklassificering 1</li>
+              </ul>
+            </div>
+          </li>
+          <li id="3" class="scenario">
+            <div class="scenario-heading">
+              <h2>Inga regler brutna</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Givet </span>att inga regler är brutna</li>
+                <li class="step">
+                  <span class="keyword">När </span>handläggaren granskar ärendets prioritet</li>
+                <li class="step">
+                  <span class="keyword">Så </span>är ärendets prioritetsklassificering nollställd</li>
               </ul>
             </div>
           </li>
@@ -95,7 +150,7 @@ Vill jag att prioriteringen av ärenden räknas ut åt mig</p>
       </div>
       <div id="footer">
         <p>Test results generated for: NerdSupport, version 0.1</p>
-        <p>Pickled on: 20 februari 2012 10:46:36</p>
+        <p>Pickled on: 21 februari 2012 08:25:03</p>
         <p>Produced by Pickles, version 0.5.0.0</p>
       </div>
     </div>

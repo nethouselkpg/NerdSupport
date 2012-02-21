@@ -1,50 +1,127 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<TestRun id="2bcd657f-9058-47d6-a6da-56e24c86cfb3" name="jpersson@PC260 2012-02-20 22:46:34" runUser="GROUP\jpersson" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <TestSettings name="Default Test Settings" id="419ff19e-5eb0-4953-81c6-47b06615e2f0">
-    <Deployment userDeploymentRoot="C:\projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Reports\Generator" useDefaultDeploymentRoot="false" runDeploymentRoot="jpersson_PC260 2012-02-20 22_46_34" />
+<TestRun id="9717b20e-f57a-4bd4-82e3-2836c22711a5" name="jpersson@PC260 2012-02-21 20:39:05" runUser="GROUP\jpersson" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="f9a74208-a6c0-484b-8c06-d98ec4b0f779">
+    <Deployment userDeploymentRoot="C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Reports\Generator" useDefaultDeploymentRoot="false" runDeploymentRoot="jpersson_PC260 2012-02-21 20_39_05" />
     <Execution>
       <TestTypeSpecific />
       <AgentRule name="Execution Agents">
       </AgentRule>
     </Execution>
   </TestSettings>
-  <Times creation="2012-02-20T22:46:34.2393334+01:00" queuing="2012-02-20T22:46:34.4833334+01:00" start="2012-02-20T22:46:34.5503334+01:00" finish="2012-02-20T22:46:35.0623334+01:00" />
+  <Times creation="2012-02-21T20:39:05.5913215+01:00" queuing="2012-02-21T20:39:05.8343458+01:00" start="2012-02-21T20:39:05.8833507+01:00" finish="2012-02-21T20:39:06.5064130+01:00" />
   <ResultSummary outcome="Inconclusive">
-    <Counters total="3" executed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="3" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <Counters total="10" executed="10" error="0" failed="0" timeout="0" aborted="0" inconclusive="10" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
   </ResultSummary>
   <TestDefinitions>
-    <UnitTest name="AllaReglerArBrutna" storage="../../bin/debug/nerdsupport.specs.dll" id="18da6446-ff3a-227f-dddf-1e2a341c0009">
-      <Description>Alla regler är brutna</Description>
-      <Execution id="d5b29b3d-705f-4ae0-a208-ffe65662d086" />
+    <UnitTest name="UppdateraBefintligtArendeMhaIdIAmnesrad" storage="../../bin/debug/nerdsupport.specs.dll" id="d901931e-3f19-4255-095c-ea0d7be485eb">
+      <Description>Uppdatera befintligt ärende mha id i ämnesrad</Description>
+      <Execution id="ae2bd98b-8cb3-4712-89be-ac4a9bcc29a5" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Skapa ärende från e-mail</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.SkapaArendeFranE_MailFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UppdateraBefintligtArendeMhaIdIAmnesrad" />
+    </UnitTest>
+    <UnitTest name="IngaReglerBrutna" storage="../../bin/debug/nerdsupport.specs.dll" id="becc6575-fc69-eeef-d435-b2e604e675f8">
+      <Description>Inga regler brutna</Description>
+      <Execution id="9cb7660a-e6e7-41c4-b978-38ed40eb4677" />
       <Properties>
         <Property>
           <Key>FeatureTitle</Key>
           <Value>Prioritering av arenden</Value>
         </Property>
       </Properties>
-      <TestMethod codeBase="C:/projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AllaReglerArBrutna" />
+      <TestMethod codeBase="C:/Projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IngaReglerBrutna" />
     </UnitTest>
     <UnitTest name="Sortering" storage="../../bin/debug/nerdsupport.specs.dll" id="c79ebf9f-724c-9fbf-1a69-30cc1180a049">
       <Description>Sortering</Description>
-      <Execution id="777c7b28-b79a-4b4d-bbf1-f030ece5f36a" />
+      <Execution id="725137b9-5a96-4425-87cb-0a1e4ccc4fd4" />
       <Properties>
         <Property>
           <Key>FeatureTitle</Key>
           <Value>Färgläggning av ärenden i lista</Value>
         </Property>
       </Properties>
-      <TestMethod codeBase="C:/projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.FarglaggningAvArendenIListaFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Sortering" />
+      <TestMethod codeBase="C:/Projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.FarglaggningAvArendenIListaFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Sortering" />
     </UnitTest>
     <UnitTest name="ArendeMedPrio1" storage="../../bin/debug/nerdsupport.specs.dll" id="d37e4316-551f-ec59-2dae-752d0503e685">
       <Description>Ärende med prio 1</Description>
-      <Execution id="62d1fd3a-9074-437b-baf8-cecc454bcc8d" />
+      <Execution id="bba26057-95dd-4653-93d8-1e618c22e067" />
       <Properties>
         <Property>
           <Key>FeatureTitle</Key>
           <Value>Färgläggning av ärenden i lista</Value>
         </Property>
       </Properties>
-      <TestMethod codeBase="C:/projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.FarglaggningAvArendenIListaFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ArendeMedPrio1" />
+      <TestMethod codeBase="C:/Projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.FarglaggningAvArendenIListaFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ArendeMedPrio1" />
+    </UnitTest>
+    <UnitTest name="MailMedIdUtanBefintligtArende" storage="../../bin/debug/nerdsupport.specs.dll" id="c06af0f8-ac7a-10e8-bd8d-22dbf1e05abb">
+      <Description>Mail med id utan befintligt ärende</Description>
+      <Execution id="c4443b30-af73-42d2-9585-68bc46a1e216" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Skapa ärende från e-mail</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.SkapaArendeFranE_MailFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MailMedIdUtanBefintligtArende" />
+    </UnitTest>
+    <UnitTest name="EnRegelArBruten" storage="../../bin/debug/nerdsupport.specs.dll" id="6349ddd1-ceb5-e9e9-ef74-8a4f9939307d">
+      <Description>En regel är bruten</Description>
+      <Execution id="a9d6efa7-076a-4ff8-a035-58ded56a9e37" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Prioritering av arenden</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnRegelArBruten" />
+    </UnitTest>
+    <UnitTest name="AllaReglerArBrutna" storage="../../bin/debug/nerdsupport.specs.dll" id="18da6446-ff3a-227f-dddf-1e2a341c0009">
+      <Description>Alla regler är brutna</Description>
+      <Execution id="28f11f35-5396-4c89-bd88-8217bef878b2" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Prioritering av arenden</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AllaReglerArBrutna" />
+    </UnitTest>
+    <UnitTest name="FleraLikadanaMail" storage="../../bin/debug/nerdsupport.specs.dll" id="3abda30b-ad5b-2d8a-74c4-a0650398c6d7">
+      <Description>Flera likadana mail</Description>
+      <Execution id="e9df96aa-8160-486f-a85e-aed789798ac2" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Filtrera e-mail i inkorg</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.FiltreraE_MailIInkorgFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FleraLikadanaMail" />
+    </UnitTest>
+    <UnitTest name="SkapaNyttArende" storage="../../bin/debug/nerdsupport.specs.dll" id="70b81245-ee52-4702-0df8-1399c80b344d">
+      <Description>Skapa nytt ärende</Description>
+      <Execution id="664be152-4ec0-4e76-958f-35b0470d5604" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Skapa ärende från e-mail</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.SkapaArendeFranE_MailFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SkapaNyttArende" />
+    </UnitTest>
+    <UnitTest name="AvsandareFinnsEjRegistrerad" storage="../../bin/debug/nerdsupport.specs.dll" id="ebea8793-641b-7b6f-48e6-c64a47c81715">
+      <Description>Avsändare finns ej registrerad</Description>
+      <Execution id="4233d0ec-f56e-425f-9ac4-a4e2dd710425" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Filtrera e-mail i inkorg</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/Projects/NerdSupport.nethouselkpg/Specs/NerdSupport.Specs/bin/debug/NerdSupport.Specs.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdSupport.Specs.Backlog.FiltreraE_MailIInkorgFeature, NerdSupport.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AvsandareFinnsEjRegistrerad" />
     </UnitTest>
   </TestDefinitions>
   <TestLists>
@@ -52,12 +129,19 @@
     <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
   </TestLists>
   <TestEntries>
-    <TestEntry testId="d37e4316-551f-ec59-2dae-752d0503e685" executionId="62d1fd3a-9074-437b-baf8-cecc454bcc8d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="c79ebf9f-724c-9fbf-1a69-30cc1180a049" executionId="777c7b28-b79a-4b4d-bbf1-f030ece5f36a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
-    <TestEntry testId="18da6446-ff3a-227f-dddf-1e2a341c0009" executionId="d5b29b3d-705f-4ae0-a208-ffe65662d086" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d37e4316-551f-ec59-2dae-752d0503e685" executionId="bba26057-95dd-4653-93d8-1e618c22e067" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c79ebf9f-724c-9fbf-1a69-30cc1180a049" executionId="725137b9-5a96-4425-87cb-0a1e4ccc4fd4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ebea8793-641b-7b6f-48e6-c64a47c81715" executionId="4233d0ec-f56e-425f-9ac4-a4e2dd710425" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3abda30b-ad5b-2d8a-74c4-a0650398c6d7" executionId="e9df96aa-8160-486f-a85e-aed789798ac2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18da6446-ff3a-227f-dddf-1e2a341c0009" executionId="28f11f35-5396-4c89-bd88-8217bef878b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6349ddd1-ceb5-e9e9-ef74-8a4f9939307d" executionId="a9d6efa7-076a-4ff8-a035-58ded56a9e37" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="becc6575-fc69-eeef-d435-b2e604e675f8" executionId="9cb7660a-e6e7-41c4-b978-38ed40eb4677" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c06af0f8-ac7a-10e8-bd8d-22dbf1e05abb" executionId="c4443b30-af73-42d2-9585-68bc46a1e216" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="70b81245-ee52-4702-0df8-1399c80b344d" executionId="664be152-4ec0-4e76-958f-35b0470d5604" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d901931e-3f19-4255-095c-ea0d7be485eb" executionId="ae2bd98b-8cb3-4712-89be-ac4a9bcc29a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
   </TestEntries>
   <Results>
-    <UnitTestResult executionId="62d1fd3a-9074-437b-baf8-cecc454bcc8d" testId="d37e4316-551f-ec59-2dae-752d0503e685" testName="ArendeMedPrio1" computerName="PC260" duration="00:00:00.0736888" startTime="2012-02-20T22:46:34.5623334+01:00" endTime="2012-02-20T22:46:34.9973334+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62d1fd3a-9074-437b-baf8-cecc454bcc8d">
+    <UnitTestResult executionId="bba26057-95dd-4653-93d8-1e618c22e067" testId="d37e4316-551f-ec59-2dae-752d0503e685" testName="ArendeMedPrio1" computerName="PC260" duration="00:00:00.0630649" startTime="2012-02-21T20:39:05.8943518+01:00" endTime="2012-02-21T20:39:06.3423966+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bba26057-95dd-4653-93d8-1e618c22e067">
       <Output>
         <StdOut>Givet ett ärende med prio 1
 -&gt; No matching step definition found for the step. Use the following code to create one:
@@ -148,13 +232,13 @@ public class StepDefinitions
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="777c7b28-b79a-4b4d-bbf1-f030ece5f36a" testId="c79ebf9f-724c-9fbf-1a69-30cc1180a049" testName="Sortering" computerName="PC260" duration="00:00:00.0181354" startTime="2012-02-20T22:46:34.9993334+01:00" endTime="2012-02-20T22:46:35.0203334+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="777c7b28-b79a-4b4d-bbf1-f030ece5f36a">
+    <UnitTestResult executionId="725137b9-5a96-4425-87cb-0a1e4ccc4fd4" testId="c79ebf9f-724c-9fbf-1a69-30cc1180a049" testName="Sortering" computerName="PC260" duration="00:00:00.0181938" startTime="2012-02-21T20:39:06.3443968+01:00" endTime="2012-02-21T20:39:06.3653989+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="725137b9-5a96-4425-87cb-0a1e4ccc4fd4">
       <Output>
         <StdOut>Givet följande ärenden
   --- table step argument ---
-  | Ärende  | Prio |
-  | viktigt | 1    |
-  | mindre  | 2    |
+  | Ärende  | Prioritetsklassificering |
+  | viktigt | 1                        |
+  | mindre  | 2                        |
 -&gt; No matching step definition found for the step. Use the following code to create one:
     [Binding]
     public class StepDefinitions
@@ -243,56 +327,39 @@ public class StepDefinitions
         </ErrorInfo>
       </Output>
     </UnitTestResult>
-    <UnitTestResult executionId="d5b29b3d-705f-4ae0-a208-ffe65662d086" testId="18da6446-ff3a-227f-dddf-1e2a341c0009" testName="AllaReglerArBrutna" computerName="PC260" duration="00:00:00.0127230" startTime="2012-02-20T22:46:35.0223334+01:00" endTime="2012-02-20T22:46:35.0403334+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d5b29b3d-705f-4ae0-a208-ffe65662d086">
+    <UnitTestResult executionId="4233d0ec-f56e-425f-9ac4-a4e2dd710425" testId="ebea8793-641b-7b6f-48e6-c64a47c81715" testName="AvsandareFinnsEjRegistrerad" computerName="PC260" duration="00:00:00.0073766" startTime="2012-02-21T20:39:06.3683992+01:00" endTime="2012-02-21T20:39:06.3814005+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4233d0ec-f56e-425f-9ac4-a4e2dd710425">
       <Output>
-        <StdOut>Givet att följande regler är kopplade till ett avtal
-  --- table step argument ---
-  | Namn | Prioritering |
-  | Tid  | 3            |
-  | Pris | 1            |
-  | VIP  | 2            |
+        <StdOut>Givet att Ove inte finns registrerad som användare
 -&gt; No matching step definition found for the step. Use the following code to create one:
     [Binding]
     public class StepDefinitions
     {
-        [Given(@"att följande regler är kopplade till ett avtal")]
-        public void GivetAttFoljandeReglerArKoppladeTillEttAvtal(Table table)
+        [Given(@"att Ove inte finns registrerad som användare")]
+        public void GivetAttOveInteFinnsRegistreradSomAnvandare()
         {
             ScenarioContext.Current.Pending();
         }
     }
 
-Givet bla
+När Ove skickar in ett e-mail
 -&gt; No matching step definition found for the step. Use the following code to create one:
     [Binding]
     public class StepDefinitions
     {
-        [Given(@"bla")]
-        public void GivetBla()
+        [When(@"Ove skickar in ett e-mail")]
+        public void NarOveSkickarInEttE_Mail()
         {
             ScenarioContext.Current.Pending();
         }
     }
 
-När handläggaren listar ärenden
+Så ska det inte skapas ett ärende
 -&gt; No matching step definition found for the step. Use the following code to create one:
     [Binding]
     public class StepDefinitions
     {
-        [When(@"handläggaren listar ärenden")]
-        public void NarHandlaggarenListarArenden()
-        {
-            ScenarioContext.Current.Pending();
-        }
-    }
-
-Så har ärendet röd färg
--&gt; No matching step definition found for the step. Use the following code to create one:
-    [Binding]
-    public class StepDefinitions
-    {
-        [Then(@"har ärendet röd färg")]
-        public void SaHarArendetRodFarg()
+        [Then(@"ska det inte skapas ett ärende")]
+        public void SaSkaDetInteSkapasEttArende()
         {
             ScenarioContext.Current.Pending();
         }
@@ -302,26 +369,189 @@ Så har ärendet röd färg
 [Binding]
 public class StepDefinitions
 {
-    [Given(@"att följande regler är kopplade till ett avtal")]
-    public void GivetAttFoljandeReglerArKoppladeTillEttAvtal(Table table)
+    [Given(@"att Ove inte finns registrerad som användare")]
+    public void GivetAttOveInteFinnsRegistreradSomAnvandare()
     {
         ScenarioContext.Current.Pending();
     }
     
-    [Given(@"bla")]
-    public void GivetBla()
+    [Then(@"ska det inte skapas ett ärende")]
+    public void SaSkaDetInteSkapasEttArende()
     {
         ScenarioContext.Current.Pending();
     }
     
-    [Then(@"har ärendet röd färg")]
-    public void SaHarArendetRodFarg()
+    [When(@"Ove skickar in ett e-mail")]
+    public void NarOveSkickarInEttE_Mail()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at NerdSupport.Specs.Backlog.FiltreraE_MailIInkorgFeature.ScenarioCleanup() in C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\HittaEmailIInkorg.feature.cs:line 0
+   at NerdSupport.Specs.Backlog.FiltreraE_MailIInkorgFeature.AvsandareFinnsEjRegistrerad() in c:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\HittaEmailIInkorg.feature:line 12
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e9df96aa-8160-486f-a85e-aed789798ac2" testId="3abda30b-ad5b-2d8a-74c4-a0650398c6d7" testName="FleraLikadanaMail" computerName="PC260" duration="00:00:00.0069762" startTime="2012-02-21T20:39:06.3834007+01:00" endTime="2012-02-21T20:39:06.3924016+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e9df96aa-8160-486f-a85e-aed789798ac2">
+      <Output>
+        <StdOut>Givet att Hans redan har skickat in ett ärende via mail
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"att Hans redan har skickat in ett ärende via mail")]
+        public void GivetAttHansRedanHarSkickatInEttArendeViaMail()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+När Hans skickar samma mail en gång till
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [When(@"Hans skickar samma mail en gång till")]
+        public void NarHansSkickarSammaMailEnGangTill()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Så ska det inte skapas ett ärende
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Then(@"ska det inte skapas ett ärende")]
+        public void SaSkaDetInteSkapasEttArende()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"att Hans redan har skickat in ett ärende via mail")]
+    public void GivetAttHansRedanHarSkickatInEttArendeViaMail()
     {
         ScenarioContext.Current.Pending();
     }
     
-    [When(@"handläggaren listar ärenden")]
-    public void NarHandlaggarenListarArenden()
+    [Then(@"ska det inte skapas ett ärende")]
+    public void SaSkaDetInteSkapasEttArende()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"Hans skickar samma mail en gång till")]
+    public void NarHansSkickarSammaMailEnGangTill()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at NerdSupport.Specs.Backlog.FiltreraE_MailIInkorgFeature.ScenarioCleanup() in C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\HittaEmailIInkorg.feature.cs:line 0
+   at NerdSupport.Specs.Backlog.FiltreraE_MailIInkorgFeature.FleraLikadanaMail() in c:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\HittaEmailIInkorg.feature:line 17
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="28f11f35-5396-4c89-bd88-8217bef878b2" testId="18da6446-ff3a-227f-dddf-1e2a341c0009" testName="AllaReglerArBrutna" computerName="PC260" duration="00:00:00.0103887" startTime="2012-02-21T20:39:06.3944018+01:00" endTime="2012-02-21T20:39:06.4094033+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28f11f35-5396-4c89-bd88-8217bef878b2">
+      <Output>
+        <StdOut>Givet att följande regler är kopplade till Nethouse avtal
+  --- table step argument ---
+  | Namn | Prioritetsklassificering |
+  | Tid  | 3                        |
+  | Pris | 1                        |
+  | VIP  | 2                        |
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"att följande regler är kopplade till Nethouse avtal")]
+        public void GivetAttFoljandeReglerArKoppladeTillNethouseAvtal(Table table)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Givet att alla regler är brutna
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"att alla regler är brutna")]
+        public void GivetAttAllaReglerArBrutna()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+När handläggaren granskar ärendets prioritet
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [When(@"handläggaren granskar ärendets prioritet")]
+        public void NarHandlaggarenGranskarArendetsPrioritet()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Så är ärendets prioritetsklassificering 1
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Then(@"är ärendets prioritetsklassificering 1")]
+        public void SaArArendetsPrioritetsklassificering1()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"att alla regler är brutna")]
+    public void GivetAttAllaReglerArBrutna()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"att följande regler är kopplade till Nethouse avtal")]
+    public void GivetAttFoljandeReglerArKoppladeTillNethouseAvtal(Table table)
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"är ärendets prioritetsklassificering 1")]
+    public void SaArArendetsPrioritetsklassificering1()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"handläggaren granskar ärendets prioritet")]
+    public void NarHandlaggarenGranskarArendetsPrioritet()
     {
         ScenarioContext.Current.Pending();
     }
@@ -334,7 +564,466 @@ public class StepDefinitions
    at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
    at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
    at NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature.ScenarioCleanup() in C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\PrioriteringAvArende.feature.cs:line 0
-   at NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature.AllaReglerArBrutna() in c:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\PrioriteringAvArende.feature:line 20
+   at NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature.AllaReglerArBrutna() in c:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\PrioriteringAvArende.feature:line 25
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a9d6efa7-076a-4ff8-a035-58ded56a9e37" testId="6349ddd1-ceb5-e9e9-ef74-8a4f9939307d" testName="EnRegelArBruten" computerName="PC260" duration="00:00:00.0105856" startTime="2012-02-21T20:39:06.4114035+01:00" endTime="2012-02-21T20:39:06.4244048+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9d6efa7-076a-4ff8-a035-58ded56a9e37">
+      <Output>
+        <StdOut>Givet att följande regler är kopplade till Nethouse avtal
+  --- table step argument ---
+  | Namn | Prioritetsklassificering |
+  | Tid  | 3                        |
+  | Pris | 1                        |
+  | VIP  | 2                        |
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"att följande regler är kopplade till Nethouse avtal")]
+        public void GivetAttFoljandeReglerArKoppladeTillNethouseAvtal(Table table)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Givet att VIP regeln bryts
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"att VIP regeln bryts")]
+        public void GivetAttVIPRegelnBryts()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+När handläggaren granskar ärendets prioritet
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [When(@"handläggaren granskar ärendets prioritet")]
+        public void NarHandlaggarenGranskarArendetsPrioritet()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Så är ärendets prioritetsklassificering 2
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Then(@"är ärendets prioritetsklassificering 2")]
+        public void SaArArendetsPrioritetsklassificering2()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"att följande regler är kopplade till Nethouse avtal")]
+    public void GivetAttFoljandeReglerArKoppladeTillNethouseAvtal(Table table)
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"att VIP regeln bryts")]
+    public void GivetAttVIPRegelnBryts()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"är ärendets prioritetsklassificering 2")]
+    public void SaArArendetsPrioritetsklassificering2()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"handläggaren granskar ärendets prioritet")]
+    public void NarHandlaggarenGranskarArendetsPrioritet()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature.ScenarioCleanup() in C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\PrioriteringAvArende.feature.cs:line 0
+   at NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature.EnRegelArBruten() in c:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\PrioriteringAvArende.feature:line 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9cb7660a-e6e7-41c4-b978-38ed40eb4677" testId="becc6575-fc69-eeef-d435-b2e604e675f8" testName="IngaReglerBrutna" computerName="PC260" duration="00:00:00.0110366" startTime="2012-02-21T20:39:06.4264050+01:00" endTime="2012-02-21T20:39:06.4394063+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9cb7660a-e6e7-41c4-b978-38ed40eb4677">
+      <Output>
+        <StdOut>Givet att följande regler är kopplade till Nethouse avtal
+  --- table step argument ---
+  | Namn | Prioritetsklassificering |
+  | Tid  | 3                        |
+  | Pris | 1                        |
+  | VIP  | 2                        |
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"att följande regler är kopplade till Nethouse avtal")]
+        public void GivetAttFoljandeReglerArKoppladeTillNethouseAvtal(Table table)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Givet att inga regler är brutna
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"att inga regler är brutna")]
+        public void GivetAttIngaReglerArBrutna()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+När handläggaren granskar ärendets prioritet
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [When(@"handläggaren granskar ärendets prioritet")]
+        public void NarHandlaggarenGranskarArendetsPrioritet()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Så är ärendets prioritetsklassificering nollställd
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Then(@"är ärendets prioritetsklassificering nollställd")]
+        public void SaArArendetsPrioritetsklassificeringNollstalld()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"att följande regler är kopplade till Nethouse avtal")]
+    public void GivetAttFoljandeReglerArKoppladeTillNethouseAvtal(Table table)
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"att inga regler är brutna")]
+    public void GivetAttIngaReglerArBrutna()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"är ärendets prioritetsklassificering nollställd")]
+    public void SaArArendetsPrioritetsklassificeringNollstalld()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"handläggaren granskar ärendets prioritet")]
+    public void NarHandlaggarenGranskarArendetsPrioritet()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature.ScenarioCleanup() in C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\PrioriteringAvArende.feature.cs:line 0
+   at NerdSupport.Specs.Backlog.PrioriteringAvArendenFeature.IngaReglerBrutna() in c:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\PrioriteringAvArende.feature:line 30
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c4443b30-af73-42d2-9585-68bc46a1e216" testId="c06af0f8-ac7a-10e8-bd8d-22dbf1e05abb" testName="MailMedIdUtanBefintligtArende" computerName="PC260" duration="00:00:00.0103585" startTime="2012-02-21T20:39:06.4424066+01:00" endTime="2012-02-21T20:39:06.4564080+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c4443b30-af73-42d2-9585-68bc46a1e216">
+      <Output>
+        <StdOut>Givet följande email
+  --- table step argument ---
+  | Ämne              | Brödtext                  |
+  | 602 fungerar inte | Mitt tangentbord är borta |
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"följande email")]
+        public void GivetFoljandeEmail(Table table)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Och att det inte finns något befintligt ärende med id 602
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"att det inte finns något befintligt ärende med id 602")]
+        public void GivetAttDetInteFinnsNagotBefintligtArendeMedId602()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+När Greta skickar emailet
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [When(@"Greta skickar emailet")]
+        public void NarGretaSkickarEmailet()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Så ska inget ärende skapas
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Then(@"ska inget ärende skapas")]
+        public void SaSkaIngetArendeSkapas()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"att det inte finns något befintligt ärende med id 602")]
+    public void GivetAttDetInteFinnsNagotBefintligtArendeMedId602()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"följande email")]
+    public void GivetFoljandeEmail(Table table)
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"ska inget ärende skapas")]
+    public void SaSkaIngetArendeSkapas()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"Greta skickar emailet")]
+    public void NarGretaSkickarEmailet()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at NerdSupport.Specs.Backlog.SkapaArendeFranE_MailFeature.ScenarioCleanup() in C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\SkapaArendeFranEmail.feature.cs:line 0
+   at NerdSupport.Specs.Backlog.SkapaArendeFranE_MailFeature.MailMedIdUtanBefintligtArende() in c:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\SkapaArendeFranEmail.feature:line 35
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="664be152-4ec0-4e76-958f-35b0470d5604" testId="70b81245-ee52-4702-0df8-1399c80b344d" testName="SkapaNyttArende" computerName="PC260" duration="00:00:00.0075960" startTime="2012-02-21T20:39:06.4584082+01:00" endTime="2012-02-21T20:39:06.4694093+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="664be152-4ec0-4e76-958f-35b0470d5604">
+      <Output>
+        <StdOut>Givet följande e-mail
+  --- table step argument ---
+  | Ämne             | Brödtext           |
+  | Problem med Lync | Hjälp det är panik |
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"följande e-mail")]
+        public void GivetFoljandeE_Mail(Table table)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+När Hans skickar in detta
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [When(@"Hans skickar in detta")]
+        public void NarHansSkickarInDetta()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Så ska ett nytt ärende skapas upp
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Then(@"ska ett nytt ärende skapas upp")]
+        public void SaSkaEttNyttArendeSkapasUpp()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"följande e-mail")]
+    public void GivetFoljandeE_Mail(Table table)
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"ska ett nytt ärende skapas upp")]
+    public void SaSkaEttNyttArendeSkapasUpp()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"Hans skickar in detta")]
+    public void NarHansSkickarInDetta()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at NerdSupport.Specs.Backlog.SkapaArendeFranE_MailFeature.ScenarioCleanup() in C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\SkapaArendeFranEmail.feature.cs:line 0
+   at NerdSupport.Specs.Backlog.SkapaArendeFranE_MailFeature.SkapaNyttArende() in c:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\SkapaArendeFranEmail.feature:line 14
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ae2bd98b-8cb3-4712-89be-ac4a9bcc29a5" testId="d901931e-3f19-4255-095c-ea0d7be485eb" testName="UppdateraBefintligtArendeMhaIdIAmnesrad" computerName="PC260" duration="00:00:00.0100069" startTime="2012-02-21T20:39:06.4714095+01:00" endTime="2012-02-21T20:39:06.4844108+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae2bd98b-8cb3-4712-89be-ac4a9bcc29a5">
+      <Output>
+        <StdOut>Givet följande email
+  --- table step argument ---
+  | Ämne                | Brödtext            |
+  | Mer problem med 502 | Återigen problem :( |
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"följande email")]
+        public void GivetFoljandeEmail(Table table)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Och att följande ärenden redan finns registrerade
+  --- table step argument ---
+  | Id  | Ämne                | Beskrivning         |
+  | 502 | Mer problem med 502 | Återigen problem :( |
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"att följande ärenden redan finns registrerade")]
+        public void GivetAttFoljandeArendenRedanFinnsRegistrerade(Table table)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+När Greta skickar emailet
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [When(@"Greta skickar emailet")]
+        public void NarGretaSkickarEmailet()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+
+Så ska det befintliga ärendet uppdateras
+-&gt; No matching step definition found for the step. Use the following code to create one:
+    [Binding]
+    public class StepDefinitions
+    {
+        [Then(@"ska det befintliga ärendet uppdateras")]
+        public void SaSkaDetBefintligaArendetUppdateras()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+[Binding]
+public class StepDefinitions
+{
+    [Given(@"att följande ärenden redan finns registrerade")]
+    public void GivetAttFoljandeArendenRedanFinnsRegistrerade(Table table)
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Given(@"följande email")]
+    public void GivetFoljandeEmail(Table table)
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [Then(@"ska det befintliga ärendet uppdateras")]
+    public void SaSkaDetBefintligaArendetUppdateras()
+    {
+        ScenarioContext.Current.Pending();
+    }
+    
+    [When(@"Greta skickar emailet")]
+    public void NarGretaSkickarEmailet()
+    {
+        ScenarioContext.Current.Pending();
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at NerdSupport.Specs.Backlog.SkapaArendeFranE_MailFeature.ScenarioCleanup() in C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\SkapaArendeFranEmail.feature.cs:line 0
+   at NerdSupport.Specs.Backlog.SkapaArendeFranE_MailFeature.UppdateraBefintligtArendeMhaIdIAmnesrad() in c:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\Backlog\SkapaArendeFranEmail.feature:line 26
 </StackTrace>
         </ErrorInfo>
       </Output>

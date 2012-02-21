@@ -12,3 +12,5 @@ C:\Utveckling\NerdSupport\Specs\NerdSupport.Specs\bin\Debug\TechTalk.SpecFlow.dl
 C:\Utveckling\NerdSupport\Specs\NerdSupport.Specs\obj\Debug\ResolveAssemblyReference.cache
 C:\Utveckling\NerdSupport\Specs\NerdSupport.Specs\obj\Debug\NerdSupport.Specs.dll
 C:\Utveckling\NerdSupport\Specs\NerdSupport.Specs\obj\Debug\NerdSupport.Specs.pdb
+C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\bin\Debug\NerdSupport.Domain.Model.dll
+C:\Projects\NerdSupport.nethouselkpg\Specs\NerdSupport.Specs\bin\Debug\NerdSupport.Domain.Model.pdb

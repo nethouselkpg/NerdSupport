@@ -5,7 +5,7 @@ using System.Text;
 
 namespace NerdSupport.Domain.Model
 {
-    public class ServiceRegel
+    public abstract class ServiceRegel
     {
         public PrioriteringsKlassifikation PrioriteringsKlassifikation
         {
@@ -17,5 +17,7 @@ namespace NerdSupport.Domain.Model
             {
             }
         }
+
+        public abstract bool Uppfylls { get; }
     }
 }

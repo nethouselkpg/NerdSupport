@@ -7,7 +7,9 @@ namespace NerdSupport.Domain.Model
 {
     public class Arende
     {
-
+        /// <summary>
+        /// Den person som har skickat in ett ärende
+        /// </summary>
         public Avsandare Avsandare
         {
             get
@@ -19,6 +21,9 @@ namespace NerdSupport.Domain.Model
             }
         }
 
+        /// <summary>
+        /// Den person som handlägger ärendet
+        /// </summary>
         public Handlaggare Handlaggare
         {
             get
@@ -27,6 +32,17 @@ namespace NerdSupport.Domain.Model
             }
             set
             {
+            }
+        }
+
+        /// <summary>
+        /// Automatiskt beräknad prioritet
+        /// </summary>
+        public PrioriteringsKlassifikation BeraknadPrioritet
+        {
+            get
+            {
+                return null;
             }
         }
     }

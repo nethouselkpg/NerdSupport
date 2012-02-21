@@ -5,7 +5,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		NedSupport.vsmdi = NedSupport.vsmdi
 		NerdSupport.testsettings = NerdSupport.testsettings
-		readme.txt = readme.txt
+		readme.md = readme.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{1DBCA4F3-159E-4911-A002-CE1D17A7996F}"
