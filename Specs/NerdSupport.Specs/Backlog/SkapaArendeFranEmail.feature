@@ -14,6 +14,7 @@ Scenario: Skapa nytt ärende
 	Så ska ett nytt ärende skapas upp
 
 Scenario: Uppdatera befintligt ärende mha id i ämnesrad
+
 	Givet följande email
 	| Ämne				  | Brödtext		    |
 	| Mer problem med 502 | Återigen problem :( |

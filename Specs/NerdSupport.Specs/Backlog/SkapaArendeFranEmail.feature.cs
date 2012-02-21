@@ -109,7 +109,7 @@ this.ScenarioSetup(scenarioInfo);
             table2.AddRow(new string[] {
                         "Mer problem med 502",
                         "Återigen problem :("});
-#line 17
+#line 18
  testRunner.Given("följande email", ((string)(null)), table2);
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -120,11 +120,11 @@ this.ScenarioSetup(scenarioInfo);
                         "502",
                         "Mer problem med 502",
                         "Återigen problem :("});
-#line 21
+#line 22
  testRunner.And("att följande ärenden redan finns registrerade", ((string)(null)), table3);
-#line 25
- testRunner.When("Greta skickar emailet");
 #line 26
+ testRunner.When("Greta skickar emailet");
+#line 27
  testRunner.Then("ska det befintliga ärendet uppdateras");
 #line hidden
             this.ScenarioCleanup();
@@ -136,7 +136,7 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void MailMedIdUtanBefintligtArende()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Mail med id utan befintligt ärende", ((string[])(null)));
-#line 28
+#line 29
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
@@ -145,13 +145,13 @@ this.ScenarioSetup(scenarioInfo);
             table4.AddRow(new string[] {
                         "602 fungerar inte",
                         "Mitt tangentbord är borta"});
-#line 29
+#line 30
  testRunner.Given("följande email", ((string)(null)), table4);
-#line 33
- testRunner.And("att det inte finns något befintligt ärende med id 602");
 #line 34
- testRunner.When("Greta skickar emailet");
+ testRunner.And("att det inte finns något befintligt ärende med id 602");
 #line 35
+ testRunner.When("Greta skickar emailet");
+#line 36
  testRunner.Then("ska inget ärende skapas");
 #line hidden
             this.ScenarioCleanup();
