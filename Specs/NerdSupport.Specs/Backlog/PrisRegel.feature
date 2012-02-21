@@ -1,0 +1,1 @@
+﻿Egenskap: Serviceregel för att prioritera kunder som betalar mer
