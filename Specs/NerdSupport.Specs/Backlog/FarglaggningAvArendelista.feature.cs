@@ -102,7 +102,7 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "Ärende",
-                        "Prio"});
+                        "Prioritetsklassificering"});
             table1.AddRow(new string[] {
                         "viktigt",
                         "1"});

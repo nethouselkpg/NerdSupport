@@ -53,11 +53,52 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FarglaggningAvArendelista.feature</DependentUpon>
     </Compile>
-    <Compile Include="Backlog\PrioriteringAvArende.feature.cs">
+    <Compile Include="Backlog\HittaEmailIInkorg.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HittaEmailIInkorg.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Backlog\PrisRegel.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrisRegel.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Backlog\SkapaArendeFranEmail.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkapaArendeFranEmail.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Backlog\SkapaArendeManuellt.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkapaArendeManuellt.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Backlog\StangArende.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StangArende.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentIteration\PrioriteringAvArende.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PrioriteringAvArende.feature</DependentUpon>
     </Compile>
+    <Compile Include="Backlog\TidServiceRegel.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TidServiceRegel.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Backlog\ValideraForetagIArende.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValideraForetagIArende.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Backlog\VIPServiceRegel.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VIPServiceRegel.feature</DependentUpon>
+    </Compile>
+    <Compile Include="StepDefinitions\PrioriteringAvArende\IngaReglerBrutna.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,20 +109,56 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>FarglaggningAvArendelista.feature.cs</LastGenOutput>
     </None>
-    <None Include="Backlog\PrioriteringAvArende.feature">
+    <None Include="Backlog\HittaEmailIInkorg.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>HittaEmailIInkorg.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Backlog\PrisRegel.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PrisRegel.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Backlog\SkapaArendeFranEmail.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SkapaArendeFranEmail.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Backlog\SkapaArendeManuellt.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SkapaArendeManuellt.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Backlog\StangArende.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>StangArende.feature.cs</LastGenOutput>
+    </None>
+    <None Include="CurrentIteration\PrioriteringAvArende.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PrioriteringAvArende.feature.cs</LastGenOutput>
     </None>
-    <None Include="Reports\GenerateTestResult.bat" />
-    <None Include="Reports\Generate.ps1" />
+    <None Include="Backlog\TidServiceRegel.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TidServiceRegel.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Backlog\ValideraForetagIArende.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ValideraForetagIArende.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Backlog\VIPServiceRegel.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>VIPServiceRegel.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\Generator\GenerateTestResult.bat" />
+    <None Include="Reports\Generator\Generate.ps1" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CurrentIteration\" />
     <Folder Include="Done\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Reports\ImplementationReport.html" />
-    <Content Include="Reports\StepDefinitionReport.html" />
+    <Content Include="Reports\Html\ImplementationReport.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Src\Domain\NerdSupport.Domain.Model\NerdSupport.Domain.Model.csproj">
+      <Project>{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}</Project>
+      <Name>NerdSupport.Domain.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

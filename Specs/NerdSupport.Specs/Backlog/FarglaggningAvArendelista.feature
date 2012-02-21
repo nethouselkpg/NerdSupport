@@ -16,9 +16,9 @@ Scenario: Ärende med prio 1
 Scenario: Sortering
 	Givet följande ärenden
 	
-	| Ärende  | Prio |
-	| viktigt | 1    |
-	| mindre  | 2    |
+	| Ärende  | Prioritetsklassificering |
+	| viktigt | 1						 |
+	| mindre  | 2						 |
 	
 	När handläggaren listar ärenden
 	Så ska "viktigt ärende" vara överst
