@@ -1,0 +1,165 @@
+﻿<error errorId="78cd7e08-4906-48cb-80b1-7e2f8cfad3cd" host="PC260" type="System.Data.SqlClient.SqlException" message="Unable to open the physical file &quot;C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\NerdSupport.mdf&quot;. Operating system error 2: &quot;2(failed to retrieve text for this error. Reason: 15105)&quot;.&#xD;&#xA;File activation failure. The physical file name &quot;C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\NerdSupport.ldf&quot; may be incorrect." source=".Net SqlClient Data Provider" detail="System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---&gt; System.Data.SqlClient.SqlException (0x80131904): Unable to open the physical file &quot;C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\NerdSupport.mdf&quot;. Operating system error 2: &quot;2(failed to retrieve text for this error. Reason: 15105)&quot;.&#xD;&#xA;File activation failure. The physical file name &quot;C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\NerdSupport.ldf&quot; may be incorrect.&#xD;&#xA;   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)&#xD;&#xA;   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)&#xD;&#xA;   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()&#xD;&#xA;   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()&#xD;&#xA;   at System.Data.SqlClient.SqlProviderServices.&lt;&gt;c__DisplayClass10.&lt;DbDeleteDatabase&gt;b__f(SqlConnection conn)&#xD;&#xA;   at System.Data.SqlClient.SqlProviderServices.UsingConnection(SqlConnection sqlConnection, Action`1 act)&#xD;&#xA;   at System.Data.SqlClient.SqlProviderServices.UsingMasterConnection(SqlConnection sqlConnection, Action`1 act)&#xD;&#xA;   at System.Data.SqlClient.SqlProviderServices.DbDeleteDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)&#xD;&#xA;   at System.Data.Objects.ObjectContext.DeleteDatabase()&#xD;&#xA;   at System.Data.Entity.Internal.DatabaseOperations.DeleteIfExists(ObjectContext objectContext)&#xD;&#xA;   at System.Data.Entity.Database.Delete()&#xD;&#xA;   at System.Data.Entity.DropCreateDatabaseAlways`1.InitializeDatabase(TContext context)&#xD;&#xA;   at System.Data.Entity.Database.&lt;&gt;c__DisplayClass2`1.&lt;SetInitializerInternal&gt;b__0(DbContext c)&#xD;&#xA;   at System.Data.Entity.Internal.InternalContext.&lt;&gt;c__DisplayClass8.&lt;PerformDatabaseInitialization&gt;b__6()&#xD;&#xA;   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)&#xD;&#xA;   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()&#xD;&#xA;   at System.Data.Entity.Internal.LazyInternalContext.&lt;InitializeDatabase&gt;b__4(InternalContext c)&#xD;&#xA;   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)&#xD;&#xA;   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)&#xD;&#xA;   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()&#xD;&#xA;   at System.Data.Entity.Internal.InternalContext.Initialize()&#xD;&#xA;   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)&#xD;&#xA;   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()&#xD;&#xA;   at System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()&#xD;&#xA;   at System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable&lt;TResult&gt;.GetEnumerator()&#xD;&#xA;   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)&#xD;&#xA;   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)&#xD;&#xA;   at NerdSupport.Infrastructure.Repositories.Repository`1.GetAll() in C:\Projects\NerdSupport.nethouselkpg\Src\Infrastructure\NerdSupport.Infrastructure.Repositories\Repository.cs:line 62&#xD;&#xA;   at NerdSupport.Presentation.Web.Controllers.HomeController.Index() in C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\Controllers\HomeController.cs:line 21&#xD;&#xA;   at lambda_method(Closure , ControllerBase , Object[] )&#xD;&#xA;   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)&#xD;&#xA;   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;&gt;c__DisplayClass17.&lt;InvokeActionMethodWithFilters&gt;b__14()&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)&#xD;&#xA;   at System.Web.Mvc.Controller.ExecuteCore()&#xD;&#xA;   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)&#xD;&#xA;   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.&lt;&gt;c__DisplayClass11.&lt;ProcessRequest&gt;b__10()&#xD;&#xA;   at System.Web.Mvc.SecurityUtil.&lt;GetCallInAppTrustThunk&gt;b__0(Action f)&#xD;&#xA;   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.ProcessRequest(HttpContextBase httpContext)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.ProcessRequest(HttpContext httpContext)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext httpContext)&#xD;&#xA;   at System.Web.Mvc.MvcHttpHandler.VerifyAndProcessRequest(IHttpHandler httpHandler, HttpContextBase httpContext)&#xD;&#xA;   at System.Web.Routing.UrlRoutingHandler.ProcessRequest(HttpContextBase httpContext)&#xD;&#xA;   at System.Web.Routing.UrlRoutingHandler.ProcessRequest(HttpContext httpContext)&#xD;&#xA;   at System.Web.Routing.UrlRoutingHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)&#xD;&#xA;   at NerdSupport.Presentation.Web._Default.Page_Load(Object sender, EventArgs e) in C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\Default.aspx.cs:line 10&#xD;&#xA;   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)&#xD;&#xA;   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)&#xD;&#xA;   at System.Web.UI.Control.OnLoad(EventArgs e)&#xD;&#xA;   at System.Web.UI.Control.LoadRecursive()&#xD;&#xA;   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&#xD;&#xA;   at System.Web.UI.Page.HandleError(Exception e)&#xD;&#xA;   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&#xD;&#xA;   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&#xD;&#xA;   at System.Web.UI.Page.ProcessRequest()&#xD;&#xA;   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)&#xD;&#xA;   at System.Web.UI.Page.ProcessRequest(HttpContext context)&#xD;&#xA;   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Users\jpersson\AppData\Local\Temp\Temporary ASP.NET Files\root\c2d73bd2\92d2ff92\App_Web_jmdq0rvi.0.cs:line 0&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2012-02-29T09:08:06.6491973Z" statusCode="500" webHostHtmlMessage="&lt;html&gt;&#xD;&#xA;    &lt;head&gt;&#xD;&#xA;        &lt;title&gt;Unable to open the physical file &amp;quot;C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\NerdSupport.mdf&amp;quot;. Operating system error 2: &amp;quot;2(failed to retrieve text for this error. Reason: 15105)&amp;quot;.&lt;br&gt;File activation failure. The physical file name &amp;quot;C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\NerdSupport.ldf&amp;quot; may be incorrect.&lt;/title&gt;&#xD;&#xA;        &lt;style&gt;&#xD;&#xA;         body {font-family:&quot;Verdana&quot;;font-weight:normal;font-size: .7em;color:black;} &#xD;&#xA;         p {font-family:&quot;Verdana&quot;;font-weight:normal;color:black;margin-top: -5px}&#xD;&#xA;         b {font-family:&quot;Verdana&quot;;font-weight:bold;color:black;margin-top: -5px}&#xD;&#xA;         H1 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:18pt;color:red }&#xD;&#xA;         H2 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:14pt;color:maroon }&#xD;&#xA;         pre {font-family:&quot;Lucida Console&quot;;font-size: .9em}&#xD;&#xA;         .marker {font-weight: bold; color: black;text-decoration: none;}&#xD;&#xA;         .version {color: gray;}&#xD;&#xA;         .error {margin-bottom: 10px;}&#xD;&#xA;         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }&#xD;&#xA;        &lt;/style&gt;&#xD;&#xA;    &lt;/head&gt;&#xD;&#xA;&#xD;&#xA;    &lt;body bgcolor=&quot;white&quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;span&gt;&lt;H1&gt;Server Error in '/' Application.&lt;hr width=100% size=1 color=silver&gt;&lt;/H1&gt;&#xD;&#xA;&#xD;&#xA;            &lt;h2&gt; &lt;i&gt;Unable to open the physical file &amp;quot;C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\NerdSupport.mdf&amp;quot;. Operating system error 2: &amp;quot;2(failed to retrieve text for this error. Reason: 15105)&amp;quot;.&lt;br&gt;File activation failure. The physical file name &amp;quot;C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\NerdSupport.ldf&amp;quot; may be incorrect.&lt;/i&gt; &lt;/h2&gt;&lt;/span&gt;&#xD;&#xA;&#xD;&#xA;            &lt;font face=&quot;Arial, Helvetica, Geneva, SunSans-Regular, sans-serif &quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Description: &lt;/b&gt;An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Exception Details: &lt;/b&gt;System.Data.SqlClient.SqlException: Unable to open the physical file &amp;quot;C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\NerdSupport.mdf&amp;quot;. Operating system error 2: &amp;quot;2(failed to retrieve text for this error. Reason: 15105)&amp;quot;.&lt;br&gt;File activation failure. The physical file name &amp;quot;C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\NerdSupport.ldf&amp;quot; may be incorrect.&lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Source Error:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;Line 60:         public virtual IEnumerable&amp;lt;T&amp;gt; GetAll()&#xD;&#xA;Line 61:         {&#xD;&#xA;&lt;font color=red&gt;Line 62:             return dbset.ToList();&#xD;&#xA;&lt;/font&gt;Line 63:         }&#xD;&#xA;Line 64:         public virtual IEnumerable&amp;lt;T&amp;gt; GetMany(Expression&amp;lt;Func&amp;lt;T, bool&amp;gt;&amp;gt; where)&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Source File: &lt;/b&gt; C:\Projects\NerdSupport.nethouselkpg\Src\Infrastructure\NerdSupport.Infrastructure.Repositories\Repository.cs&lt;b&gt; &amp;nbsp;&amp;nbsp; Line: &lt;/b&gt; 62&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Stack Trace:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;[SqlException (0x80131904): Unable to open the physical file &amp;quot;C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\NerdSupport.mdf&amp;quot;. Operating system error 2: &amp;quot;2(failed to retrieve text for this error. Reason: 15105)&amp;quot;.&#xD;&#xA;File activation failure. The physical file name &amp;quot;C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\App_Data\NerdSupport.ldf&amp;quot; may be incorrect.]&#xD;&#xA;   System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection) +2073550&#xD;&#xA;   System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection) +5064508&#xD;&#xA;   System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning() +234&#xD;&#xA;   System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj) +2275&#xD;&#xA;   System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async) +228&#xD;&#xA;   System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe) +326&#xD;&#xA;   System.Data.SqlClient.SqlCommand.ExecuteNonQuery() +137&#xD;&#xA;   System.Data.SqlClient.&amp;lt;&amp;gt;c__DisplayClass10.&amp;lt;DbDeleteDatabase&amp;gt;b__f(SqlConnection conn) +38&#xD;&#xA;   System.Data.SqlClient.SqlProviderServices.UsingConnection(SqlConnection sqlConnection, Action`1 act) +98&#xD;&#xA;   System.Data.SqlClient.SqlProviderServices.UsingMasterConnection(SqlConnection sqlConnection, Action`1 act) +349&#xD;&#xA;   System.Data.SqlClient.SqlProviderServices.DbDeleteDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection) +242&#xD;&#xA;   System.Data.Objects.ObjectContext.DeleteDatabase() +84&#xD;&#xA;   System.Data.Entity.Internal.DatabaseOperations.DeleteIfExists(ObjectContext objectContext) +58&#xD;&#xA;   System.Data.Entity.Database.Delete() +111&#xD;&#xA;   System.Data.Entity.DropCreateDatabaseAlways`1.InitializeDatabase(TContext context) +73&#xD;&#xA;   System.Data.Entity.&amp;lt;&amp;gt;c__DisplayClass2`1.&amp;lt;SetInitializerInternal&amp;gt;b__0(DbContext c) +143&#xD;&#xA;   System.Data.Entity.Internal.&amp;lt;&amp;gt;c__DisplayClass8.&amp;lt;PerformDatabaseInitialization&amp;gt;b__6() +59&#xD;&#xA;   System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action) +101&#xD;&#xA;   System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization() +278&#xD;&#xA;   System.Data.Entity.Internal.LazyInternalContext.&amp;lt;InitializeDatabase&amp;gt;b__4(InternalContext c) +31&#xD;&#xA;   System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input) +147&#xD;&#xA;   System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action) +276&#xD;&#xA;   System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase() +112&#xD;&#xA;   System.Data.Entity.Internal.InternalContext.Initialize() +42&#xD;&#xA;   System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType) +34&#xD;&#xA;   System.Data.Entity.Internal.Linq.InternalSet`1.Initialize() +125&#xD;&#xA;   System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator() +33&#xD;&#xA;   System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable&amp;lt;TResult&amp;gt;.GetEnumerator() +91&#xD;&#xA;   System.Collections.Generic.List`1..ctor(IEnumerable`1 collection) +315&#xD;&#xA;   System.Linq.Enumerable.ToList(IEnumerable`1 source) +58&#xD;&#xA;   NerdSupport.Infrastructure.Repositories.Repository`1.GetAll() in C:\Projects\NerdSupport.nethouselkpg\Src\Infrastructure\NerdSupport.Infrastructure.Repositories\Repository.cs:62&#xD;&#xA;   NerdSupport.Presentation.Web.Controllers.HomeController.Index() in C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\Controllers\HomeController.cs:21&#xD;&#xA;   lambda_method(Closure , ControllerBase , Object[] ) +96&#xD;&#xA;   System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters) +17&#xD;&#xA;   System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters) +208&#xD;&#xA;   System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters) +27&#xD;&#xA;   System.Web.Mvc.&amp;lt;&amp;gt;c__DisplayClass15.&amp;lt;InvokeActionMethodWithFilters&amp;gt;b__12() +55&#xD;&#xA;   System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation) +263&#xD;&#xA;   System.Web.Mvc.&amp;lt;&amp;gt;c__DisplayClass17.&amp;lt;InvokeActionMethodWithFilters&amp;gt;b__14() +19&#xD;&#xA;   System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters) +191&#xD;&#xA;   System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName) +343&#xD;&#xA;   System.Web.Mvc.Controller.ExecuteCore() +116&#xD;&#xA;   System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext) +97&#xD;&#xA;   System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext) +10&#xD;&#xA;   System.Web.Mvc.&amp;lt;&amp;gt;c__DisplayClass11.&amp;lt;ProcessRequest&amp;gt;b__10() +65&#xD;&#xA;   System.Web.Mvc.SecurityUtil.&amp;lt;GetCallInAppTrustThunk&amp;gt;b__0(Action f) +7&#xD;&#xA;   System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action) +22&#xD;&#xA;   System.Web.Mvc.MvcHandler.ProcessRequest(HttpContextBase httpContext) +71&#xD;&#xA;   System.Web.Mvc.MvcHandler.ProcessRequest(HttpContext httpContext) +44&#xD;&#xA;   System.Web.Mvc.MvcHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext httpContext) +10&#xD;&#xA;   System.Web.Mvc.MvcHttpHandler.VerifyAndProcessRequest(IHttpHandler httpHandler, HttpContextBase httpContext) +46&#xD;&#xA;   System.Web.Routing.UrlRoutingHandler.ProcessRequest(HttpContextBase httpContext) +144&#xD;&#xA;   System.Web.Routing.UrlRoutingHandler.ProcessRequest(HttpContext httpContext) +42&#xD;&#xA;   System.Web.Routing.UrlRoutingHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context) +10&#xD;&#xA;   NerdSupport.Presentation.Web._Default.Page_Load(Object sender, EventArgs e) in C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\Default.aspx.cs:10&#xD;&#xA;   System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e) +14&#xD;&#xA;   System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e) +35&#xD;&#xA;   System.Web.UI.Control.OnLoad(EventArgs e) +91&#xD;&#xA;   System.Web.UI.Control.LoadRecursive() +74&#xD;&#xA;   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +2207&#xD;&#xA;&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;    &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&#xD;&#xA;">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_CHARSET:ISO-8859-1,utf-8;q=0.7,*;q=0.7&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:sv-se,sv;q=0.8,en-us;q=0.5,en;q=0.3&#xD;&#xA;HTTP_COOKIE:__utma=111872281.1644318832.1329472218.1329655897.1329661521.3; __utmz=111872281.1329472218.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&#xD;&#xA;HTTP_HOST:localhost:50799&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/20100101 Firefox/7.0.1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: sv-se,sv;q=0.8,en-us;q=0.5,en;q=0.3&#xD;&#xA;Cookie: __utma=111872281.1644318832.1329472218.1329655897.1329661521.3; __utmz=111872281.1329472218.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&#xD;&#xA;Host: localhost:50799&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/20100101 Firefox/7.0.1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="GROUP\jpersson" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="" />
+    </item>
+    <item name="HTTPS">
+      <value string="" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\Projects\NerdSupport.nethouselkpg\Src\Presentation\NerdSupport.Web\" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="50799" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="" />
+    </item>
+    <item name="URL">
+      <value string="/" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_CHARSET">
+      <value string="ISO-8859-1,utf-8;q=0.7,*;q=0.7" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="sv-se,sv;q=0.8,en-us;q=0.5,en;q=0.3" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="__utma=111872281.1644318832.1329472218.1329655897.1329661521.3; __utmz=111872281.1329472218.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:50799" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/20100101 Firefox/7.0.1" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="__utma">
+      <value string="111872281.1644318832.1329472218.1329655897.1329661521.3" />
+    </item>
+    <item name="__utmz">
+      <value string="111872281.1329472218.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)" />
+    </item>
+  </cookies>
+</error>

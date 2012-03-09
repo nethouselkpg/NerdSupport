@@ -1,0 +1,154 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E3CA68E7-7F36-4C56-8012-254BAEAE36F4}"
+	ProjectSection(SolutionItems) = preProject
+		NedSupport.vsmdi = NedSupport.vsmdi
+		NerdSupport.testsettings = NerdSupport.testsettings
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{1DBCA4F3-159E-4911-A002-CE1D17A7996F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Specs", "Specs", "{40D43AC0-D2BE-4B37-82B3-310FC0FBAABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Specs", "Specs\NerdSupport.Specs\NerdSupport.Specs.csproj", "{9EC5098E-98F5-49EA-88F1-55A029875FD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{4AE1F120-A4A5-4804-BDE8-198E9C88851B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Presentation..Web", "Src\Presentation\NerdSupport.Web\NerdSupport.Presentation..Web.csproj", "{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{CEA5FDDA-DDC6-4E59-A371-3516A04A8207}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{B9FEE2CE-4805-4DAE-8B90-84BD861A45A1}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\TechTalk.SpecFlow.dll = Lib\TechTalk.SpecFlow.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Domain.Model", "Src\Domain\NerdSupport.Domain.Model\NerdSupport.Domain.Model.csproj", "{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{738606B1-78D2-47B2-A86C-E119060688E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pickles.PowerShell", "Pickles.PowerShell", "{1DAF19CC-E1FA-4191-8B84-C4DA59CA313F}"
+	ProjectSection(SolutionItems) = preProject
+		Tools\Pickles.PowerShell\DocumentFormat.OpenXml.dll = Tools\Pickles.PowerShell\DocumentFormat.OpenXml.dll
+		Tools\Pickles.PowerShell\gherkin.dll = Tools\Pickles.PowerShell\gherkin.dll
+		Tools\Pickles.PowerShell\IKVM.AWT.WinForms.dll = Tools\Pickles.PowerShell\IKVM.AWT.WinForms.dll
+		Tools\Pickles.PowerShell\IKVM.OpenJDK.Beans.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Beans.dll
+		Tools\Pickles.PowerShell\IKVM.OpenJDK.Core.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Core.dll
+		Tools\Pickles.PowerShell\IKVM.OpenJDK.Media.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Media.dll
+		Tools\Pickles.PowerShell\IKVM.OpenJDK.Naming.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Naming.dll
+		Tools\Pickles.PowerShell\IKVM.OpenJDK.Remoting.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Remoting.dll
+		Tools\Pickles.PowerShell\IKVM.OpenJDK.Security.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Security.dll
+		Tools\Pickles.PowerShell\IKVM.OpenJDK.SwingAWT.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.SwingAWT.dll
+		Tools\Pickles.PowerShell\IKVM.OpenJDK.Text.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Text.dll
+		Tools\Pickles.PowerShell\IKVM.OpenJDK.Util.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Util.dll
+		Tools\Pickles.PowerShell\IKVM.OpenJDK.XML.API.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.XML.API.dll
+		Tools\Pickles.PowerShell\IKVM.Runtime.dll = Tools\Pickles.PowerShell\IKVM.Runtime.dll
+		Tools\Pickles.PowerShell\IKVM.Runtime.JNI.dll = Tools\Pickles.PowerShell\IKVM.Runtime.JNI.dll
+		Tools\Pickles.PowerShell\log4net.dll = Tools\Pickles.PowerShell\log4net.dll
+		Tools\Pickles.PowerShell\log4net.xml = Tools\Pickles.PowerShell\log4net.xml
+		Tools\Pickles.PowerShell\MarkdownSharp.dll = Tools\Pickles.PowerShell\MarkdownSharp.dll
+		Tools\Pickles.PowerShell\MarkdownSharp.pdb = Tools\Pickles.PowerShell\MarkdownSharp.pdb
+		Tools\Pickles.PowerShell\MarkdownSharp.xml = Tools\Pickles.PowerShell\MarkdownSharp.xml
+		Tools\Pickles.PowerShell\NDesk.Options.dll = Tools\Pickles.PowerShell\NDesk.Options.dll
+		Tools\Pickles.PowerShell\Newtonsoft.Json.dll = Tools\Pickles.PowerShell\Newtonsoft.Json.dll
+		Tools\Pickles.PowerShell\Newtonsoft.Json.pdb = Tools\Pickles.PowerShell\Newtonsoft.Json.pdb
+		Tools\Pickles.PowerShell\Newtonsoft.Json.xml = Tools\Pickles.PowerShell\Newtonsoft.Json.xml
+		Tools\Pickles.PowerShell\NGenerics.dll = Tools\Pickles.PowerShell\NGenerics.dll
+		Tools\Pickles.PowerShell\NGenerics.pdb = Tools\Pickles.PowerShell\NGenerics.pdb
+		Tools\Pickles.PowerShell\NGenerics.xml = Tools\Pickles.PowerShell\NGenerics.xml
+		Tools\Pickles.PowerShell\Ninject.dll = Tools\Pickles.PowerShell\Ninject.dll
+		Tools\Pickles.PowerShell\Ninject.pdb = Tools\Pickles.PowerShell\Ninject.pdb
+		Tools\Pickles.PowerShell\Ninject.xml = Tools\Pickles.PowerShell\Ninject.xml
+		Tools\Pickles.PowerShell\Pickles.Library.dll = Tools\Pickles.PowerShell\Pickles.Library.dll
+		Tools\Pickles.PowerShell\Pickles.Library.pdb = Tools\Pickles.PowerShell\Pickles.Library.pdb
+		Tools\Pickles.PowerShell\Pickles.PowerShell.dll = Tools\Pickles.PowerShell\Pickles.PowerShell.dll
+		Tools\Pickles.PowerShell\Pickles.PowerShell.pdb = Tools\Pickles.PowerShell\Pickles.PowerShell.pdb
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{45929BCC-B277-4EBC-B307-A099492A7734}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Infrastructure.Repositories", "Src\Infrastructure\NerdSupport.Infrastructure.Repositories\NerdSupport.Infrastructure.Repositories.csproj", "{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Infrastructure.Configuration", "Src\Infrastructure\NerdSupport.Infrastructure.Configuration\NerdSupport.Infrastructure.Configuration.csproj", "{1B760912-A325-450E-BE0A-BA43AB0E117F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Infrastructure.Bus", "Src\Infrastructure\NerdSupport.Infrastructure.EventBus\NerdSupport.Infrastructure.Bus.csproj", "{2F500258-786D-48EB-8098-B4B27B43C489}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Domain.Shared", "Src\Domain\NerdSupport.Domain.Shared\NerdSupport.Domain.Shared.csproj", "{D93A5C3B-0530-4AFE-9C4A-4562426A841A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nerdsupport.Specs.Automation", "Specs\Nerdsupport.Specs.Automation\Nerdsupport.Specs.Automation.csproj", "{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deleporter", "Deleporter", "{9421EC46-A43F-4335-A407-EEA657355C0E}"
+	ProjectSection(SolutionItems) = preProject
+		Tools\Deleporter\Deleporter.dll = Tools\Deleporter\Deleporter.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = NedSupport.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EC5098E-98F5-49EA-88F1-55A029875FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EC5098E-98F5-49EA-88F1-55A029875FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EC5098E-98F5-49EA-88F1-55A029875FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EC5098E-98F5-49EA-88F1-55A029875FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B760912-A325-450E-BE0A-BA43AB0E117F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B760912-A325-450E-BE0A-BA43AB0E117F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B760912-A325-450E-BE0A-BA43AB0E117F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B760912-A325-450E-BE0A-BA43AB0E117F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F500258-786D-48EB-8098-B4B27B43C489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F500258-786D-48EB-8098-B4B27B43C489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F500258-786D-48EB-8098-B4B27B43C489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F500258-786D-48EB-8098-B4B27B43C489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D93A5C3B-0530-4AFE-9C4A-4562426A841A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D93A5C3B-0530-4AFE-9C4A-4562426A841A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D93A5C3B-0530-4AFE-9C4A-4562426A841A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D93A5C3B-0530-4AFE-9C4A-4562426A841A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1DBCA4F3-159E-4911-A002-CE1D17A7996F} = {E3CA68E7-7F36-4C56-8012-254BAEAE36F4}
+		{40D43AC0-D2BE-4B37-82B3-310FC0FBAABA} = {E3CA68E7-7F36-4C56-8012-254BAEAE36F4}
+		{B9FEE2CE-4805-4DAE-8B90-84BD861A45A1} = {E3CA68E7-7F36-4C56-8012-254BAEAE36F4}
+		{738606B1-78D2-47B2-A86C-E119060688E4} = {E3CA68E7-7F36-4C56-8012-254BAEAE36F4}
+		{4AE1F120-A4A5-4804-BDE8-198E9C88851B} = {1DBCA4F3-159E-4911-A002-CE1D17A7996F}
+		{CEA5FDDA-DDC6-4E59-A371-3516A04A8207} = {1DBCA4F3-159E-4911-A002-CE1D17A7996F}
+		{45929BCC-B277-4EBC-B307-A099492A7734} = {1DBCA4F3-159E-4911-A002-CE1D17A7996F}
+		{9EC5098E-98F5-49EA-88F1-55A029875FD5} = {40D43AC0-D2BE-4B37-82B3-310FC0FBAABA}
+		{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2} = {40D43AC0-D2BE-4B37-82B3-310FC0FBAABA}
+		{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0} = {4AE1F120-A4A5-4804-BDE8-198E9C88851B}
+		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C} = {CEA5FDDA-DDC6-4E59-A371-3516A04A8207}
+		{D93A5C3B-0530-4AFE-9C4A-4562426A841A} = {CEA5FDDA-DDC6-4E59-A371-3516A04A8207}
+		{1DAF19CC-E1FA-4191-8B84-C4DA59CA313F} = {738606B1-78D2-47B2-A86C-E119060688E4}
+		{9421EC46-A43F-4335-A407-EEA657355C0E} = {738606B1-78D2-47B2-A86C-E119060688E4}
+		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A} = {45929BCC-B277-4EBC-B307-A099492A7734}
+		{1B760912-A325-450E-BE0A-BA43AB0E117F} = {45929BCC-B277-4EBC-B307-A099492A7734}
+		{2F500258-786D-48EB-8098-B4B27B43C489} = {45929BCC-B277-4EBC-B307-A099492A7734}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal
