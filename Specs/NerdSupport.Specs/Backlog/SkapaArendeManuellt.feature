@@ -1,1 +1,0 @@
-﻿Egenskap: Skapa ärende manuellt

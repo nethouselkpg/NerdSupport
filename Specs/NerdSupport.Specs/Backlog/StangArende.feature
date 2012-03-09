@@ -1,1 +1,0 @@
-﻿Egenskap: Stäng ärende
