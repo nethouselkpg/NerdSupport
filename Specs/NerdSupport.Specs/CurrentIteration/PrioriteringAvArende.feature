@@ -7,15 +7,15 @@ Vill jag att prioriteringen av ärenden räknas ut åt mig
 @prioritering @currentiteration
 
 Bakgrund:
-Givet att följande regler är kopplade till Nethouse avtal	
+Givet att ett serviceavtal har regler med följande prioritetsklass
 
-| Namn | Prioritetsklassificering |
-| Tid  | 3						  |
-| Pris | 1					      |
-| VIP  | 2						  |
+  | Regel | Prioritet | 
+  | Vip   | 1		  | 
+  | Pris  | 2		  | 
+  | Tid	  | 3		  |
 
 Scenario: En regel är bruten
-	Givet att VIP regeln bryts
+	Givet att Vip regel bryts
 	När handläggaren granskar ärendets prioritet
 	Så är ärendets prioritetsklassificering 2
 
@@ -27,4 +27,4 @@ Scenario: Alla regler är brutna
 Scenario: Inga regler brutna
 	Givet att inga regler är brutna
 	När handläggaren granskar ärendets prioritet
-	Så är ärendets prioritetsklassificering nollställd
+	Så är ärendets prioritetsklassificering 0

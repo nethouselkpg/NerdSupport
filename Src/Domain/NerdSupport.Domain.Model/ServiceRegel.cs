@@ -5,19 +5,20 @@ using System.Text;
 
 namespace NerdSupport.Domain.Model
 {
-    public abstract class ServiceRegel
+    public class ServiceRegel
     {
+        public long Id { get; set; }
+        
+        public string Namn { get; set; }
+        
         public PrioriteringsKlassifikation PrioriteringsKlassifikation
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public abstract bool Uppfylls { get; }
+        public virtual PrioriteringsKlassifikation Uppfyller(Arende arende) { 
+            return PrioriteringsKlassifikation.Empty();
+        }
     }
 }

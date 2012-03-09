@@ -4,6 +4,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
+using NerdSupport.Infrastructure.Repositories;
+using NerdSupport.Infrastructure.Configuration;
 
 namespace NerdSupport.Presentation.Web
 {
@@ -48,29 +50,22 @@ namespace NerdSupport.Presentation.Web
 
         public override void Init()
         {
-            this.AuthenticateRequest += new EventHandler(MvcApplication_AuthenticateRequest);
-            this.PostAuthenticateRequest += new EventHandler(MvcApplication_PostAuthenticateRequest);
+          
             base.Init();
         }
 
         void Application_Start()
         {
+            RepositoryInitializer.Init();
+            IoC.Init();
+            MessageBootstrapper.Init();
+
             RegisterRoutes(RouteTable.Routes);
 
             ViewEngines.Engines.Clear();
-            //ViewEngines.Engines.AddIPhone<WebFormViewEngine>();
-            //ViewEngines.Engines.AddGenericMobile<WebFormViewEngine>();
-            //ViewEngines.Engines.AddGenericMobile<RazorViewEngine>();
             ViewEngines.Engines.Add(new RazorViewEngine());
         }
 
-        void MvcApplication_PostAuthenticateRequest(object sender, EventArgs e)
-        {
-          
-        }
-
-        void MvcApplication_AuthenticateRequest(object sender, EventArgs e)
-        {
-        }
+   
     }
 }

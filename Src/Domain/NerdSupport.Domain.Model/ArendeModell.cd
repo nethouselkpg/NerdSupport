@@ -1,98 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Comment CommentText="kan bli --&gt;">
-    <Position X="7.292" Y="0.677" Height="0.263" Width="0.835" />
-  </Comment>
   <Class Name="NerdSupport.Domain.Model.Arende">
-    <Position X="8.5" Y="0.5" Width="2" />
+    <Position X="13.25" Y="0.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <HashCode>AAAKAAAAAAAAAAAAAAACAABAAAAAAAAAAAACAAAAAAE=</HashCode>
       <FileName>Arende.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Avsandare" />
       <Property Name="Handlaggare" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="NerdSupport.Domain.Model.Avsandare">
-    <Position X="7.75" Y="2.5" Width="1.5" />
+    <Position X="12.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <HashCode>AAACQAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
       <FileName>Avsandare.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Foretag" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="NerdSupport.Domain.Model.Foretag">
-    <Position X="7.75" Y="4" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Foretag.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="ServiceAvtal" />
     </ShowAsAssociation>
   </Class>
   <Class Name="NerdSupport.Domain.Model.ServiceAvtal">
-    <Position X="5" Y="4" Width="1.5" />
+    <Position X="2.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>ServiceAvtal.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="ServiceRegler" />
     </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="NerdSupport.Domain.Model.ServiceRegel">
-    <Position X="2.25" Y="3.75" Width="1.5" />
+    <Position X="2.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAgAAAAAAAAAAABAAAgAAAAA=</HashCode>
       <FileName>ServiceRegel.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="PrioriteringsKlassifikation" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="NerdSupport.Domain.Model.PrioriteringsKlassifikation">
-    <Position X="1.75" Y="2" Width="2" />
+    <Position X="7" Y="5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAQAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAQAAAAAIAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PrioriteringsKlassifikation.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NerdSupport.Domain.Model.SupportBrev" Collapsed="true">
-    <Position X="5.5" Y="0.5" Width="1.5" />
+    <Position X="12" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SupportBrev.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NerdSupport.Domain.Model.Handlaggare">
-    <Position X="9.75" Y="2.5" Width="1.5" />
+    <Position X="14.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Handlaggare.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NerdSupport.Domain.Model.VipServiceRegel" Collapsed="true">
-    <Position X="0.5" Y="5.25" Width="1.5" />
+    <Position X="0.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>VipServiceRegel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NerdSupport.Domain.Model.TidServiceRegel" Collapsed="true">
-    <Position X="2.25" Y="5.25" Width="1.5" />
+    <Position X="2.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>TidServiceRegel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NerdSupport.Domain.Model.PrisServiceRegel" Collapsed="true">
-    <Position X="4" Y="5.25" Width="1.5" />
+    <Position X="5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>PrisServiceRegel.cs</FileName>
     </TypeIdentifier>
   </Class>

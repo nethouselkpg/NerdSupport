@@ -34,28 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DDay.iCal, Version=0.80.0.0, Culture=neutral, PublicKeyToken=1790ba318ebc5d56, processorArchitecture=MSIL">
+    <Reference Include="Deleporter, Version=0.1.9.15416, Culture=neutral, PublicKeyToken=4265bbe4b3365141, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>lib\DDay.iCal.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth, Version=3.4.6.10357, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <HintPath>..\packages\DotNetOpenAuth.3.4.6.10357\lib\DotNetOpenAuth.dll</HintPath>
-    </Reference>
-    <Reference Include="Elmah, Version=1.1.11517.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\elmah.1.1\lib\Elmah.dll</HintPath>
+      <HintPath>..\..\..\Tools\Deleporter\Deleporter.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="FiftyOne.Foundation">
-      <HintPath>..\packages\51Degrees.mobi.1.0.2.2\lib\NET40\FiftyOne.Foundation.dll</HintPath>
-    </Reference>
-    <Reference Include="OpenSearchToolkit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\OpenSearchToolkit.1.1\lib\OpenSearchToolkit.dll</HintPath>
-    </Reference>
-    <Reference Include="PagedList">
-      <HintPath>..\packages\PagedList.1.2.1.0\lib\40\PagedList.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.Linq" />
@@ -102,14 +86,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="apple-touch-icon.png" />
-    <Content Include="App_Data\ASPNETDB.MDF" />
-    <Content Include="App_Data\aspnetdb_log.LDF">
-      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+    <Content Include="App_Data\NerdSupport.ldf">
+      <DependentUpon>NerdSupport.mdf</DependentUpon>
     </Content>
-    <Content Include="App_Data\NerdDinner.mdf" />
-    <Content Include="App_Data\NerdDinner_log.ldf">
-      <DependentUpon>NerdDinner.mdf</DependentUpon>
-    </Content>
+    <Content Include="App_Data\NerdSupport.mdf" />
     <Content Include="Content\Flair.css" />
     <Content Include="Content\images\ajax-loader.png" />
     <Content Include="Content\images\google.gif" />
@@ -367,6 +347,25 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\NerdSupport.Domain.Model\NerdSupport.Domain.Model.csproj">
+      <Project>{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}</Project>
+      <Name>NerdSupport.Domain.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\NerdSupport.Domain.Shared\NerdSupport.Domain.Shared.csproj">
+      <Project>{D93A5C3B-0530-4AFE-9C4A-4562426A841A}</Project>
+      <Name>NerdSupport.Domain.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\NerdSupport.Infrastructure.Configuration\NerdSupport.Infrastructure.Configuration.csproj">
+      <Project>{1B760912-A325-450E-BE0A-BA43AB0E117F}</Project>
+      <Name>NerdSupport.Infrastructure.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\NerdSupport.Infrastructure.Repositories\NerdSupport.Infrastructure.Repositories.csproj">
+      <Project>{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}</Project>
+      <Name>NerdSupport.Infrastructure.Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

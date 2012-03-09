@@ -7,9 +7,9 @@ namespace NerdSupport.Domain.Model
 {
     public class PrisServiceRegel : ServiceRegel
     {
-        public override bool Uppfylls
+        public override PrioriteringsKlassifikation Uppfyller(Arende arende)
         {
-            get { throw new NotImplementedException(); }
+            return PrioriteringsKlassifikation.Empty();
         }
     }
 }

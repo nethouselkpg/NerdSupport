@@ -7,7 +7,9 @@ namespace NerdSupport.Domain.Model
 {
     public class Avsandare
     {
-        public Foretag Foretag
+        public long Id { get; set; }
+
+        public ServiceAvtal ServiceAvtal
         {
             get
             {
@@ -17,5 +19,8 @@ namespace NerdSupport.Domain.Model
             {
             }
         }
+
+        public bool IsVip { get; set; }
+
     }
 }

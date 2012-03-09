@@ -7,6 +7,8 @@ namespace NerdSupport.Domain.Model
 {
     public class Foretag
     {
+        public long Id { get; set; }
+
         public ServiceAvtal ServiceAvtal
         {
             get

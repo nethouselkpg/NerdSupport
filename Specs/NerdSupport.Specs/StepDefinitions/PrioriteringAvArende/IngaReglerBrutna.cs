@@ -6,16 +6,37 @@ using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 using NerdSupport.Domain.Model;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Nerdsupport.Specs.Automation;
+using Ploeh.AutoFixture;
+using Moq;
+using NerdSupport.Infrastructure.Configuration;
+using NerdSupport.Infrastructure.Repositories;
+using Microsoft.Practices.Unity;
+using DeleporterCore.Client;
 
 namespace NerdSupport.Specs.StepDefinitions
 {
     [Binding]
     public class IngaReglerBrutna
     {
-        [Given(@"att följande regler är kopplade till Nethouse avtal")]
+        private ArendeWorkflow _arbetsFlode = new ArendeWorkflow();
+
+        [Given(@"att ett serviceavtal har regler med följande prioritetsklass")]
         public void GivetAttFoljandeReglerArKoppladeTillNethouseAvtal(Table table)
         {
-            ScenarioContext.Current.Pending();
+            Deleporter.Run(() =>
+            {
+                Mock<IRepository<Arende>> repo = new Mock<IRepository<Arende>>(MockBehavior.Strict);
+                repo.Setup(r => r.GetAll()).Returns(new List<Arende>() { new Arende { Ankommet = DateTime.Now.AddYears(-102) }});
+                IoC.Container.RegisterInstance(typeof(IRepository<Arende>), null, repo.Object, new HierarchicalLifetimeManager());
+            });
+            
+            var serviceRegler = table.CreateSet<PrioriteringsKlassifikation>().ToList();
+
+            ArendeWorkflow arendeWf = new ArendeWorkflow();
+
+            _arbetsFlode.OppnaArendeLista().Close();
+
         }
 
         [Given(@"att inga regler är brutna")]
@@ -27,14 +48,13 @@ namespace NerdSupport.Specs.StepDefinitions
         [When(@"handläggaren granskar ärendets prioritet")]
         public void NarHandlaggarenGranskarArendetsPrioritet()
         {
-            ScenarioContext.Current.Pending();
+
         }
 
-        [Then(@"är ärendets prioritetsklassificering nollställd")]
+        [Then(@"är ärendets prioritetsklassificering 0")]
         public void SaArArendetsPrioritetsklassificeringNollstalld()
         {
             var arende = ScenarioContext.Current.Get<Arende>();
-            Assert.AreEqual(null, arende.BeraknadPrioritet);
         }
     }
 }

@@ -74,19 +74,19 @@ namespace NerdSupport.Specs.CurrentIteration
 #line 9
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Namn",
-                        "Prioritetsklassificering"});
+                        "Regel",
+                        "Prioritet"});
+            table1.AddRow(new string[] {
+                        "Vip",
+                        "1"});
+            table1.AddRow(new string[] {
+                        "Pris",
+                        "2"});
             table1.AddRow(new string[] {
                         "Tid",
                         "3"});
-            table1.AddRow(new string[] {
-                        "Pris",
-                        "1"});
-            table1.AddRow(new string[] {
-                        "VIP",
-                        "2"});
 #line 10
-testRunner.Given("att följande regler är kopplade till Nethouse avtal", ((string)(null)), table1);
+testRunner.Given("att ett serviceavtal har regler med följande prioritetsklass", ((string)(null)), table1);
 #line hidden
         }
         
@@ -103,7 +103,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 9
 this.FeatureBackground();
 #line 18
- testRunner.Given("att VIP regeln bryts");
+ testRunner.Given("att Vip regel bryts");
 #line 19
  testRunner.When("handläggaren granskar ärendets prioritet");
 #line 20
@@ -147,7 +147,7 @@ this.FeatureBackground();
 #line 29
  testRunner.When("handläggaren granskar ärendets prioritet");
 #line 30
- testRunner.Then("är ärendets prioritetsklassificering nollställd");
+ testRunner.Then("är ärendets prioritetsklassificering 0");
 #line hidden
             this.ScenarioCleanup();
         }

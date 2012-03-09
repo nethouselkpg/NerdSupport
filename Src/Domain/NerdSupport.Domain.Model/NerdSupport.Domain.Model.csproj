@@ -56,6 +56,12 @@
   <ItemGroup>
     <None Include="ArendeModell.cd" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NerdSupport.Domain.Shared\NerdSupport.Domain.Shared.csproj">
+      <Project>{D93A5C3B-0530-4AFE-9C4A-4562426A841A}</Project>
+      <Name>NerdSupport.Domain.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

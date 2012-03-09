@@ -7,5 +7,6 @@ namespace NerdSupport.Domain.Model
 {
     public class SupportBrev
     {
+        public long Id { get; set; }
     }
 }

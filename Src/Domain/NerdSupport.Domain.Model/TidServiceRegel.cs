@@ -7,9 +7,10 @@ namespace NerdSupport.Domain.Model
 {
     public class TidServiceRegel : ServiceRegel
     {
-        public override bool Uppfylls
+        public override PrioriteringsKlassifikation Uppfyller(Arende arende)
         {
-            get { throw new NotImplementedException(); }
+            return arende.Ankommet < DateTime.Now.AddDays(-14) ? 
+                this.PrioriteringsKlassifikation : PrioriteringsKlassifikation.Empty();
         }
     }
 }
