@@ -16,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Specs", "Specs\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{4AE1F120-A4A5-4804-BDE8-198E9C88851B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Presentation..Web", "Src\Presentation\NerdSupport.Web\NerdSupport.Presentation..Web.csproj", "{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Presentation.Web", "Src\Presentation\NerdSupport.Web\NerdSupport.Presentation.Web.csproj", "{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{CEA5FDDA-DDC6-4E59-A371-3516A04A8207}"
 EndProject
@@ -69,13 +69,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pickles.PowerShell", "Pickl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{45929BCC-B277-4EBC-B307-A099492A7734}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Infrastructure.Repositories", "Src\Infrastructure\NerdSupport.Infrastructure.Repositories\NerdSupport.Infrastructure.Repositories.csproj", "{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Infrastructure.Configuration", "Src\Infrastructure\NerdSupport.Infrastructure.Configuration\NerdSupport.Infrastructure.Configuration.csproj", "{1B760912-A325-450E-BE0A-BA43AB0E117F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Infrastructure.Bus", "Src\Infrastructure\NerdSupport.Infrastructure.EventBus\NerdSupport.Infrastructure.Bus.csproj", "{2F500258-786D-48EB-8098-B4B27B43C489}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Domain.Shared", "Src\Domain\NerdSupport.Domain.Shared\NerdSupport.Domain.Shared.csproj", "{D93A5C3B-0530-4AFE-9C4A-4562426A841A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nerdsupport.Specs.Automation", "Specs\Nerdsupport.Specs.Automation\Nerdsupport.Specs.Automation.csproj", "{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}"
 EndProject
@@ -83,6 +79,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deleporter", "Deleporter", 
 	ProjectSection(SolutionItems) = preProject
 		Tools\Deleporter\Deleporter.dll = Tools\Deleporter\Deleporter.dll
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Domain.Repositories", "Src\Domain\NerdSupport.Domain.Repositories\NerdSupport.Domain.Repositories.csproj", "{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Domain.Factories", "Src\Domain\NerdSupport.Domain.Factories\NerdSupport.Domain.Factories.csproj", "{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nerdsupport.Presentation.ViewModels", "Src\Presentation\Nerdsupport.Presentation.ViewModels\Nerdsupport.Presentation.ViewModels.csproj", "{11F869FC-E72C-4E1E-8BF7-CFFBA24DF7D3}"
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
@@ -105,10 +107,6 @@ Global
 		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1B760912-A325-450E-BE0A-BA43AB0E117F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1B760912-A325-450E-BE0A-BA43AB0E117F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B760912-A325-450E-BE0A-BA43AB0E117F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -117,14 +115,22 @@ Global
 		{2F500258-786D-48EB-8098-B4B27B43C489}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F500258-786D-48EB-8098-B4B27B43C489}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F500258-786D-48EB-8098-B4B27B43C489}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D93A5C3B-0530-4AFE-9C4A-4562426A841A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D93A5C3B-0530-4AFE-9C4A-4562426A841A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D93A5C3B-0530-4AFE-9C4A-4562426A841A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D93A5C3B-0530-4AFE-9C4A-4562426A841A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11F869FC-E72C-4E1E-8BF7-CFFBA24DF7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F869FC-E72C-4E1E-8BF7-CFFBA24DF7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F869FC-E72C-4E1E-8BF7-CFFBA24DF7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F869FC-E72C-4E1E-8BF7-CFFBA24DF7D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,11 +146,12 @@ Global
 		{9EC5098E-98F5-49EA-88F1-55A029875FD5} = {40D43AC0-D2BE-4B37-82B3-310FC0FBAABA}
 		{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2} = {40D43AC0-D2BE-4B37-82B3-310FC0FBAABA}
 		{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0} = {4AE1F120-A4A5-4804-BDE8-198E9C88851B}
+		{11F869FC-E72C-4E1E-8BF7-CFFBA24DF7D3} = {4AE1F120-A4A5-4804-BDE8-198E9C88851B}
 		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C} = {CEA5FDDA-DDC6-4E59-A371-3516A04A8207}
-		{D93A5C3B-0530-4AFE-9C4A-4562426A841A} = {CEA5FDDA-DDC6-4E59-A371-3516A04A8207}
+		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A} = {CEA5FDDA-DDC6-4E59-A371-3516A04A8207}
+		{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7} = {CEA5FDDA-DDC6-4E59-A371-3516A04A8207}
 		{1DAF19CC-E1FA-4191-8B84-C4DA59CA313F} = {738606B1-78D2-47B2-A86C-E119060688E4}
 		{9421EC46-A43F-4335-A407-EEA657355C0E} = {738606B1-78D2-47B2-A86C-E119060688E4}
-		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A} = {45929BCC-B277-4EBC-B307-A099492A7734}
 		{1B760912-A325-450E-BE0A-BA43AB0E117F} = {45929BCC-B277-4EBC-B307-A099492A7734}
 		{2F500258-786D-48EB-8098-B4B27B43C489} = {45929BCC-B277-4EBC-B307-A099492A7734}
 	EndGlobalSection

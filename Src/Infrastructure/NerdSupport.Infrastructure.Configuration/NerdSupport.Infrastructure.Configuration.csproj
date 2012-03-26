@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\..\packages\AutoMapper.2.1.265\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation">
       <HintPath>..\..\..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
@@ -55,31 +58,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Booter.cs" />
     <Compile Include="ControllerActivator.cs" />
+    <Compile Include="ViewMapper.cs" />
+    <Compile Include="MappingProfiles\ShowArendeProfile.cs" />
     <Compile Include="UnityDependencyResolver.cs" />
     <Compile Include="MessageBootstrapper.cs" />
-    <Compile Include="UnityBootstrapper.cs" />
+    <Compile Include="IoC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Domain\NerdSupport.Domain.Factories\NerdSupport.Domain.Factories.csproj">
+      <Project>{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7}</Project>
+      <Name>NerdSupport.Domain.Factories</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Domain\NerdSupport.Domain.Model\NerdSupport.Domain.Model.csproj">
       <Project>{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}</Project>
       <Name>NerdSupport.Domain.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Domain\NerdSupport.Domain.Shared\NerdSupport.Domain.Shared.csproj">
-      <Project>{D93A5C3B-0530-4AFE-9C4A-4562426A841A}</Project>
-      <Name>NerdSupport.Domain.Shared</Name>
+    <ProjectReference Include="..\..\Domain\NerdSupport.Domain.Repositories\NerdSupport.Domain.Repositories.csproj">
+      <Project>{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}</Project>
+      <Name>NerdSupport.Domain.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Presentation\Nerdsupport.Presentation.ViewModels\Nerdsupport.Presentation.ViewModels.csproj">
+      <Project>{11F869FC-E72C-4E1E-8BF7-CFFBA24DF7D3}</Project>
+      <Name>Nerdsupport.Presentation.ViewModels</Name>
     </ProjectReference>
     <ProjectReference Include="..\NerdSupport.Infrastructure.EventBus\NerdSupport.Infrastructure.Bus.csproj">
       <Project>{2F500258-786D-48EB-8098-B4B27B43C489}</Project>
       <Name>NerdSupport.Infrastructure.Bus</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NerdSupport.Infrastructure.Repositories\NerdSupport.Infrastructure.Repositories.csproj">
-      <Project>{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}</Project>
-      <Name>NerdSupport.Infrastructure.Repositories</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

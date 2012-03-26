@@ -3,34 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using NerdSupport.Infrastructure.Repositories;
 using NerdSupport.Domain.Model;
+using NerdSupport.Domain.Repositories;
+using NerdSupport.Domain.Factories;
+using Nerdsupport.Presentation.ViewModels;
 
 namespace NerdSupport.Presentation.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IRepository<Arende> _arendeRepository;
-        public HomeController(IRepository<Arende> arendeRepository)
+        private readonly FrageKo _frageKo;
+ 
+        public HomeController(IFactory<FrageKo> frageKoFactory)
         {
-            _arendeRepository = arendeRepository;
+            _frageKo = frageKoFactory.Skapa();
         }
 
+        [AutoMapFilter(typeof(Fraga), typeof(ShowFraga))]
         public ActionResult Index()
         {
-            var arende = _arendeRepository.GetAll();
-            return View(arende); 
+            return View(_frageKo.HamtaNastaFraga());
         }
 
-        public ActionResult About()
-        {
-            return View();
-        }
-
-        public ActionResult PrivacyPolicy()
-        {
-            return View();
-        }
 
 
     }

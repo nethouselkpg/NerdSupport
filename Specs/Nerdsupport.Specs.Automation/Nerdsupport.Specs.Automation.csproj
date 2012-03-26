@@ -40,6 +40,8 @@
       <Private>True</Private>
       <HintPath>..\..\packages\WatiN.2.1.0\lib\net40\Microsoft.mshtml.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,7 +55,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArendeWorkflow.cs" />
+    <Compile Include="ObjectCloner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartPage.cs" />
     <Compile Include="Workflow.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,32 +1,12 @@
 ﻿<div id="hm-masthead">
-    @if (Model == null)
-    { 
+
         <div id="searchBox">
             <div class="search-text">
-                Enter your location or <strong>@Html.ActionLink("View All Upcoming Dinners", "Index", "Dinners")</strong>.</div>
+               Sök efter besvarade frågor</div>
             @Html.TextBox("Location")
-            <input id="search" type="submit" value="Search" />
+            <input id="search" type="submit" value="Sök" />
         </div>
         
-        <script type="text/javascript">
-            $("#search").click(ValidateAndFindDinners);
-
-            $("#Location").keypress(function (evt) {
-                if (evt.which == 13) {
-                    ValidateAndFindDinners();
-                }
-            });
-
-            function ValidateAndFindDinners() {
-                var where = $.trim($get('Location').value);
-
-                if (where.length < 1)
-                    return;
-
-                Sys.Application.addHistoryPoint({ 'where': where });
-
-                NerdDinner.FindDinnersGivenLocation(where);
-            }
-        </script>
-    }
+    
+   
 </div>

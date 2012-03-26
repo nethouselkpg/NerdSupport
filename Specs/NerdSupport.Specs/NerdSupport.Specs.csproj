@@ -104,6 +104,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StangArende.feature</DependentUpon>
     </Compile>
+    <Compile Include="CurrentIteration\VisaFraga.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VisaFraga.feature</DependentUpon>
+    </Compile>
     <Compile Include="CurrentIteration\PrioriteringAvArende.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -124,8 +129,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VIPServiceRegel.feature</DependentUpon>
     </Compile>
-    <Compile Include="StepDefinitions\PrioriteringAvArende\IngaReglerBrutna.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StepDefinitions\IngaReglerBrutna.cs" />
+    <Compile Include="StepDefinitions\VisaFraga.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -155,6 +161,10 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>StangArende.feature.cs</LastGenOutput>
     </None>
+    <None Include="CurrentIteration\VisaFraga.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>VisaFraga.feature.cs</LastGenOutput>
+    </None>
     <None Include="CurrentIteration\PrioriteringAvArende.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PrioriteringAvArende.feature.cs</LastGenOutput>
@@ -182,21 +192,21 @@
     <Content Include="Reports\Html\ImplementationReport.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Src\Domain\NerdSupport.Domain.Factories\NerdSupport.Domain.Factories.csproj">
+      <Project>{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7}</Project>
+      <Name>NerdSupport.Domain.Factories</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Src\Domain\NerdSupport.Domain.Model\NerdSupport.Domain.Model.csproj">
       <Project>{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}</Project>
       <Name>NerdSupport.Domain.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Src\Domain\NerdSupport.Domain.Shared\NerdSupport.Domain.Shared.csproj">
-      <Project>{D93A5C3B-0530-4AFE-9C4A-4562426A841A}</Project>
-      <Name>NerdSupport.Domain.Shared</Name>
+    <ProjectReference Include="..\..\Src\Domain\NerdSupport.Domain.Repositories\NerdSupport.Domain.Repositories.csproj">
+      <Project>{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}</Project>
+      <Name>NerdSupport.Domain.Repositories</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Src\Infrastructure\NerdSupport.Infrastructure.Configuration\NerdSupport.Infrastructure.Configuration.csproj">
       <Project>{1B760912-A325-450E-BE0A-BA43AB0E117F}</Project>
       <Name>NerdSupport.Infrastructure.Configuration</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Src\Infrastructure\NerdSupport.Infrastructure.Repositories\NerdSupport.Infrastructure.Repositories.csproj">
-      <Project>{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}</Project>
-      <Name>NerdSupport.Infrastructure.Repositories</Name>
     </ProjectReference>
     <ProjectReference Include="..\Nerdsupport.Specs.Automation\Nerdsupport.Specs.Automation.csproj">
       <Project>{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}</Project>

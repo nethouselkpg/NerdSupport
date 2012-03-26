@@ -76,7 +76,7 @@ p {line-height: 150%; margin: 7px 0px 7px 0px;}
 a {color: #660000; font-style: normal; text-decoration: underline; font-weight: bold;}
 a:hover {color: #666666; font-style: normal; text-decoration: none;}
 
-h1 {font-size: 138.5%; padding: 0px 0px 10px 0px;}
+h1 {font-size: 180%; padding: 0px 0px 10px 0px;}
 h2 {font-size: 138.5%; padding: 0px 0px 10px 0px;}
 h3 {}
 h4 {}
@@ -116,15 +116,17 @@ a.feed { position: relative; top: 23px; text-decoration: none; }
 #mapDivLeft 
 {
     float: left;
-    width: 600px;
+    width: 500px;
 }
 
 #mapDivRight 
 {
     float: left;
     padding: 0px;
-    width: 200px;
+    width: 300px;
 }
+
+
 
 #logged-in {position: absolute; right:65px; top:56px; font-size: 138.5%;}
 .logged-in-name {color: #336600;}
@@ -177,7 +179,7 @@ select.input-validation-error
 
 #main {}
 
-#hm-masthead {position:relative; height: 160px; width: 863px; background: transparent url('img/hm-masthead.png') no-repeat 0px 45px;}
+#hm-masthead {position:relative; height: 160px; width: 863px; background: transparent url('/Content/logotext.png') no-repeat 0px 45px;}
 
 #searchBox {position:absolute; bottom:0px; left:490px; width: 373px; height: 109px; padding: 20px 0px 0px 25px; background: transparent url('img/search-bubble.png') no-repeat;}
 #searchBox img {margin: 0px 0px 8px 0px;}

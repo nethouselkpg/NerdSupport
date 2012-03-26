@@ -115,7 +115,7 @@ this.ScenarioSetup(scenarioInfo);
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                         "Id",
                         "Ämne",
-                        "Beskrivning"});
+                        "Fråga"});
             table3.AddRow(new string[] {
                         "502",
                         "Mer problem med 502",

@@ -19,7 +19,7 @@ namespace NerdSupport.Specs.CurrentIteration
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.8.1.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class PrioriteringAvArendenFeature
+    public partial class PrioriteringAvFragorFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,8 +31,8 @@ namespace NerdSupport.Specs.CurrentIteration
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("sv-SE"), "Prioritering av arenden", "\r\nFör att undvika vite\r\nSom handläggare\r\nVill jag att prioriteringen av ärenden r" +
-                    "äknas ut åt mig", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("sv-SE"), "Prioritering av frågor", "\r\nFör nörden ska vara på rätt fråga\r\nSom system\r\nSka jag räkna ut prioriteringen " +
+                    "på frågorna enligt ett regelsystem", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -47,9 +47,9 @@ namespace NerdSupport.Specs.CurrentIteration
         public virtual void TestInitialize()
         {
             if (((TechTalk.SpecFlow.FeatureContext.Current != null) 
-                        && (TechTalk.SpecFlow.FeatureContext.Current.FeatureInfo.Title != "Prioritering av arenden")))
+                        && (TechTalk.SpecFlow.FeatureContext.Current.FeatureInfo.Title != "Prioritering av frågor")))
             {
-                NerdSupport.Specs.CurrentIteration.PrioriteringAvArendenFeature.FeatureSetup(null);
+                NerdSupport.Specs.CurrentIteration.PrioriteringAvFragorFeature.FeatureSetup(null);
             }
         }
         
@@ -74,28 +74,28 @@ namespace NerdSupport.Specs.CurrentIteration
 #line 9
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Regel",
+                        "Namn",
                         "Prioritet"});
             table1.AddRow(new string[] {
-                        "Vip",
+                        "8 timmars regeln",
                         "1"});
             table1.AddRow(new string[] {
-                        "Pris",
-                        "2"});
+                        "Dygnsregeln",
+                        "5"});
             table1.AddRow(new string[] {
-                        "Tid",
-                        "3"});
+                        "VIP avsändar regeln",
+                        "78"});
 #line 10
-testRunner.Given("att ett serviceavtal har regler med följande prioritetsklass", ((string)(null)), table1);
+testRunner.Given("att ett serviceavtal har följande SLA regler", ((string)(null)), table1);
 #line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("En regel är bruten")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Prioritering av arenden")]
-        public virtual void EnRegelArBruten()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Beräkna prioritet när en av SLA reglerna bryts")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Prioritering av frågor")]
+        public virtual void BeraknaPrioritetNarEnAvSLAReglernaBryts()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("En regel är bruten", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Beräkna prioritet när en av SLA reglerna bryts", new string[] {
                         "prioritering",
                         "currentiteration"});
 #line 17
@@ -103,51 +103,53 @@ this.ScenarioSetup(scenarioInfo);
 #line 9
 this.FeatureBackground();
 #line 18
- testRunner.Given("att Vip regel bryts");
+ testRunner.Given("att \"8 timmars regeln\" inte uppfylls");
 #line 19
- testRunner.When("handläggaren granskar ärendets prioritet");
+ testRunner.When("Systemet beräknar frågans prioritet");
 #line 20
- testRunner.Then("är ärendets prioritetsklassificering 2");
+ testRunner.Then("är frågans prioritet 1");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Alla regler är brutna")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Prioritering av arenden")]
-        public virtual void AllaReglerArBrutna()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Beräkna prioritet när flera SLA regler inte uppfylls")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Prioritering av frågor")]
+        public virtual void BeraknaPrioritetNarFleraSLAReglerInteUppfylls()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Alla regler är brutna", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Beräkna prioritet när flera SLA regler inte uppfylls", ((string[])(null)));
 #line 22
 this.ScenarioSetup(scenarioInfo);
 #line 9
 this.FeatureBackground();
 #line 23
- testRunner.Given("att alla regler är brutna");
+ testRunner.Given("att \"8 timmars regeln\" inte uppfylls");
 #line 24
- testRunner.When("handläggaren granskar ärendets prioritet");
+ testRunner.And("att \"Dygnsregeln\" inte uppfylls");
 #line 25
- testRunner.Then("är ärendets prioritetsklassificering 1");
+ testRunner.When("Systemet beräknar frågans prioritet");
+#line 26
+ testRunner.Then("är frågans prioritet 6");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Inga regler brutna")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Prioritering av arenden")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Prioritering av frågor")]
         public virtual void IngaReglerBrutna()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Inga regler brutna", ((string[])(null)));
-#line 27
+#line 28
 this.ScenarioSetup(scenarioInfo);
 #line 9
 this.FeatureBackground();
-#line 28
- testRunner.Given("att inga regler är brutna");
 #line 29
- testRunner.When("handläggaren granskar ärendets prioritet");
+ testRunner.Given("att inga regler är brutna");
 #line 30
- testRunner.Then("är ärendets prioritetsklassificering 0");
+ testRunner.When("Systemet beräknar frågans prioritet");
+#line 31
+ testRunner.Then("är frågans prioritet 0");
 #line hidden
             this.ScenarioCleanup();
         }

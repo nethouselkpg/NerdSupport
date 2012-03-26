@@ -4,8 +4,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
-using NerdSupport.Infrastructure.Repositories;
 using NerdSupport.Infrastructure.Configuration;
+using NerdSupport.Domain.Repositories;
+using Nerdsupport.Presentation.ViewModels;
 
 namespace NerdSupport.Presentation.Web
 {
@@ -23,18 +24,6 @@ namespace NerdSupport.Presentation.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                    "PrettyDetails",
-                    "{Id}",
-                        new { controller = "Dinners", action = "Details" },
-                        new { Id = @"\d+" }
-                    );
-
-            routes.MapRoute(
-                    "UpcomingDinners",
-                    "Dinners/Page/{page}",
-                    new { controller = "Dinners", action = "Index" }
-            );
 
             routes.MapRoute(
                     "Default",                                              // Route name
@@ -42,23 +31,18 @@ namespace NerdSupport.Presentation.Web
                     new { controller = "Home", action = "Index", id = "" }  // Parameter defaults
             );
 
-            routes.MapRoute(
-                "OpenIdDiscover",
-                "Auth/Discover");
 
         }
 
         public override void Init()
         {
-          
+
             base.Init();
         }
 
         void Application_Start()
         {
-            RepositoryInitializer.Init();
-            IoC.Init();
-            MessageBootstrapper.Init();
+            Booter.Boot();
 
             RegisterRoutes(RouteTable.Routes);
 
@@ -66,6 +50,6 @@ namespace NerdSupport.Presentation.Web
             ViewEngines.Engines.Add(new RazorViewEngine());
         }
 
-   
+
     }
 }

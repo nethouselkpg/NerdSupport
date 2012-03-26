@@ -83,6 +83,11 @@ $(document).ready(function() {
                   <a href="#">Prioritering av arenden</a>
                 </li>
               </div>
+              <div class="file">
+                <li>
+                  <a href="VisaFraga.html">VIsa fraga</a>
+                </li>
+              </div>
             </ul>
           </li>
           <li>
@@ -105,9 +110,9 @@ $(document).ready(function() {
       <div id="feature">
         <h1>Prioritering av arenden</h1>
         <div class="description" xmlns="http://www.w3.org/1999/xhtml">
-          <p>För att undvika vite
+          <p>För att veta vilket ärende jag ska jobba med
 Som handläggare
-Vill jag att prioriteringen av ärenden räknas ut åt mig</p>
+Vill jag att ärendena prioriteras åt mig</p>
         </div>
         <ul id="scenarios">
           <li id="0" class="scenario">
@@ -117,18 +122,18 @@ Vill jag att prioriteringen av ärenden räknas ut åt mig</p>
             <div class="steps">
               <ul>
                 <li class="step">
-                  <span class="keyword">Givet </span>att följande regler är kopplade till Nethouse avtal<div class="table_container"><table class="datatable"><thead><tr><th>Namn</th><th>Prioritetsklassificering</th></tr></thead><tbody><tr><td>Tid</td><td>3</td></tr><tr><td>Pris</td><td>1</td></tr><tr><td>VIP</td><td>2</td></tr></tbody></table></div></li>
+                  <span class="keyword">Givet </span>att ett serviceavtal har följande SLA regler<div class="table_container"><table class="datatable"><thead><tr><th>Namn</th><th>Prioritet</th></tr></thead><tbody><tr><td>Lösning klar inom viss tid</td><td>1</td></tr><tr><td>Påbörjad inom viss tid</td><td>2</td></tr><tr><td>Inte byta handläggare mer än 2 ggr</td><td>3</td></tr></tbody></table></div></li>
               </ul>
             </div>
           </li>
           <li id="1" class="scenario">
             <div class="scenario-heading">
-              <h2>En regel är bruten</h2>
+              <h2>Beräkna prioritet när en av SLA reglerna bryts</h2>
             </div>
             <div class="steps">
               <ul>
                 <li class="step">
-                  <span class="keyword">Givet </span>att VIP regeln bryts</li>
+                  <span class="keyword">Givet </span>att "Påbörjad inom viss tid" regel bryts</li>
                 <li class="step">
                   <span class="keyword">När </span>handläggaren granskar ärendets prioritet</li>
                 <li class="step">
@@ -138,16 +143,18 @@ Vill jag att prioriteringen av ärenden räknas ut åt mig</p>
           </li>
           <li id="2" class="scenario">
             <div class="scenario-heading">
-              <h2>Alla regler är brutna</h2>
+              <h2>Beräkna prioritet när flera SLA regler bryts</h2>
             </div>
             <div class="steps">
               <ul>
                 <li class="step">
-                  <span class="keyword">Givet </span>att alla regler är brutna</li>
+                  <span class="keyword">Givet </span>att "Påbörjad inom viss tid" regeln bryts</li>
+                <li class="step">
+                  <span class="keyword">Och </span>att "Inte byta handläggare mer än 2 ggr" bryts</li>
                 <li class="step">
                   <span class="keyword">När </span>handläggaren granskar ärendets prioritet</li>
                 <li class="step">
-                  <span class="keyword">Så </span>är ärendets prioritetsklassificering 1</li>
+                  <span class="keyword">Så </span>är ärendets prioritet 5 eftersom de brutna reglernas prioritet har adderats</li>
               </ul>
             </div>
           </li>
@@ -162,7 +169,7 @@ Vill jag att prioriteringen av ärenden räknas ut åt mig</p>
                 <li class="step">
                   <span class="keyword">När </span>handläggaren granskar ärendets prioritet</li>
                 <li class="step">
-                  <span class="keyword">Så </span>är ärendets prioritetsklassificering nollställd</li>
+                  <span class="keyword">Så </span>är ärendets prioritetsklassificering 0</li>
               </ul>
             </div>
           </li>
@@ -170,7 +177,7 @@ Vill jag att prioriteringen av ärenden räknas ut åt mig</p>
       </div>
       <div id="footer">
         <p>Test results generated for: NerdSupport, version 0.1</p>
-        <p>Pickled on: 21 februari 2012 08:39:10</p>
+        <p>Pickled on: 25 mars 2012 01:03:53</p>
         <p>Produced by Pickles, version 0.5.0.0</p>
       </div>
     </div>
