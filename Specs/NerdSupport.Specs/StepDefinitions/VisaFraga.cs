@@ -14,27 +14,23 @@ using Nerdsupport.Specs.Automation;
 namespace NerdSupport.Specs.StepDefinitions.VisaFraga
 {
     [Binding]
-    public class VisaFraga
+    public class VisaFraga : StepDefinition
     {
         private NordWorkflow _arbetsFlode = new NordWorkflow();
 
         [Given(@"att följande frågor finns")]
         public void GivetAttFoljandeFragorFinns(Table table)
         {
-            var fragor = table.CreateSet<Fraga>().ToList();
-
-            Deleporter.Run(() =>
-            {
-                var frageKoFactory = new Mock<IFactory<FrageKo>>(MockBehavior.Loose);
-                frageKoFactory.Setup(r => r.Skapa()).Returns(new FrageKo(fragor));
-                IoC.InjectBinding(typeof(IFactory<FrageKo>), frageKoFactory.Object);
-            });
+            var fragor = table.GenerateTestDataFrom<Fraga>().ToList();
+            
+            InjectPreconditions(fragor);
+           
         }
 
-        [Then(@"ser nörden frågan om \""(.*)\""")]
-        public void SaSerNordenFraganOmHurUttalasAzure(string fragaTitel)
+        [Then(@"ser nörden frågan om \""(.*)\"" (.*)")]
+        public void SaSerNordenFraganOmHurUttalasAzure(string fragaTitel, string anledning)
         {
-            _arbetsFlode.KontrolleraTitel(fragaTitel).Close();
+            _arbetsFlode.KontrolleraTitel(fragaTitel).Stäng();
         }
 
         [When(@"Nörden navigerar till sidan för att besvara frågor")]

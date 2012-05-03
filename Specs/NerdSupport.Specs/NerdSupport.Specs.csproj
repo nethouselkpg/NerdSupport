@@ -47,14 +47,13 @@
     <Reference Include="Moq">
       <HintPath>..\..\packages\Moq.3.1.416.3\lib\Moq.dll</HintPath>
     </Reference>
-    <Reference Include="Ploeh.AutoFixture">
-      <HintPath>..\..\packages\AutoFixture.2.9.1\lib\Ploeh.AutoFixture.dll</HintPath>
+    <Reference Include="Ploeh.AutoFixture, Version=2.9.2.0, Culture=neutral, PublicKeyToken=b24654c590009d4f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\AutoFixture.2.9.2\lib\Ploeh.AutoFixture.dll</HintPath>
     </Reference>
-    <Reference Include="Ploeh.AutoFixture.AutoMoq">
-      <HintPath>..\..\packages\AutoFixture.AutoMoq.2.9.1\lib\Ploeh.AutoFixture.AutoMoq.dll</HintPath>
-    </Reference>
-    <Reference Include="Ploeh.SemanticComparison">
-      <HintPath>..\..\packages\AutoFixture.2.9.1\lib\Ploeh.SemanticComparison.dll</HintPath>
+    <Reference Include="Ploeh.SemanticComparison, Version=2.9.2.0, Culture=neutral, PublicKeyToken=b24654c590009d4f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\AutoFixture.2.9.2\lib\Ploeh.SemanticComparison.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -104,12 +103,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StangArende.feature</DependentUpon>
     </Compile>
-    <Compile Include="CurrentIteration\VisaFraga.feature.cs">
+    <Compile Include="CurrentIteration\TjanaPengar.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TjanaPengar.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Done\VisaFraga.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>VisaFraga.feature</DependentUpon>
     </Compile>
-    <Compile Include="CurrentIteration\PrioriteringAvArende.feature.cs">
+    <Compile Include="Done\PrioriteringAvArende.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PrioriteringAvArende.feature</DependentUpon>
@@ -130,7 +134,9 @@
       <DependentUpon>VIPServiceRegel.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StepDefinitions\StepEvents.cs" />
     <Compile Include="StepDefinitions\IngaReglerBrutna.cs" />
+    <Compile Include="StepDefinitions\TjanaPengar.cs" />
     <Compile Include="StepDefinitions\VisaFraga.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -161,11 +167,15 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>StangArende.feature.cs</LastGenOutput>
     </None>
-    <None Include="CurrentIteration\VisaFraga.feature">
+    <None Include="CurrentIteration\TjanaPengar.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TjanaPengar.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Done\VisaFraga.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>VisaFraga.feature.cs</LastGenOutput>
     </None>
-    <None Include="CurrentIteration\PrioriteringAvArende.feature">
+    <None Include="Done\PrioriteringAvArende.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PrioriteringAvArende.feature.cs</LastGenOutput>
     </None>
@@ -182,12 +192,10 @@
       <LastGenOutput>VIPServiceRegel.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="Reports\Generator\GenerateDocumentation.ps1" />
     <None Include="Reports\Generator\GenerateTestResult.bat" />
-    <None Include="Reports\Generator\Generate.ps1" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Done\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Reports\Html\ImplementationReport.html" />
   </ItemGroup>
@@ -199,10 +207,6 @@
     <ProjectReference Include="..\..\Src\Domain\NerdSupport.Domain.Model\NerdSupport.Domain.Model.csproj">
       <Project>{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}</Project>
       <Name>NerdSupport.Domain.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Src\Domain\NerdSupport.Domain.Repositories\NerdSupport.Domain.Repositories.csproj">
-      <Project>{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}</Project>
-      <Name>NerdSupport.Domain.Repositories</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Src\Infrastructure\NerdSupport.Infrastructure.Configuration\NerdSupport.Infrastructure.Configuration.csproj">
       <Project>{1B760912-A325-450E-BE0A-BA43AB0E117F}</Project>

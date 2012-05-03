@@ -21,7 +21,7 @@ namespace Nerdsupport.Specs.Automation
             }
         }
 
-        public void Close()
+        public void Stäng()
         {
             _browser.Dispose();
             _browser = null;

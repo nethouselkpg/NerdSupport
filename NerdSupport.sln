@@ -5,7 +5,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		NedSupport.vsmdi = NedSupport.vsmdi
 		NerdSupport.testsettings = NerdSupport.testsettings
-		readme.md = readme.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{1DBCA4F3-159E-4911-A002-CE1D17A7996F}"
@@ -22,50 +21,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{CEA5FD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{B9FEE2CE-4805-4DAE-8B90-84BD861A45A1}"
 	ProjectSection(SolutionItems) = preProject
+		Lib\AutoMapper.dll = Lib\AutoMapper.dll
+		Lib\Deleporter.dll = Lib\Deleporter.dll
+		Lib\Moq.dll = Lib\Moq.dll
+		Lib\Ploeh.AutoFixture.dll = Lib\Ploeh.AutoFixture.dll
 		Lib\TechTalk.SpecFlow.dll = Lib\TechTalk.SpecFlow.dll
+		Lib\WatiN.Core.dll = Lib\WatiN.Core.dll
+		Lib\WatiN.Core.XML = Lib\WatiN.Core.XML
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Domain.Model", "Src\Domain\NerdSupport.Domain.Model\NerdSupport.Domain.Model.csproj", "{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{738606B1-78D2-47B2-A86C-E119060688E4}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pickles.PowerShell", "Pickles.PowerShell", "{1DAF19CC-E1FA-4191-8B84-C4DA59CA313F}"
-	ProjectSection(SolutionItems) = preProject
-		Tools\Pickles.PowerShell\DocumentFormat.OpenXml.dll = Tools\Pickles.PowerShell\DocumentFormat.OpenXml.dll
-		Tools\Pickles.PowerShell\gherkin.dll = Tools\Pickles.PowerShell\gherkin.dll
-		Tools\Pickles.PowerShell\IKVM.AWT.WinForms.dll = Tools\Pickles.PowerShell\IKVM.AWT.WinForms.dll
-		Tools\Pickles.PowerShell\IKVM.OpenJDK.Beans.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Beans.dll
-		Tools\Pickles.PowerShell\IKVM.OpenJDK.Core.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Core.dll
-		Tools\Pickles.PowerShell\IKVM.OpenJDK.Media.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Media.dll
-		Tools\Pickles.PowerShell\IKVM.OpenJDK.Naming.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Naming.dll
-		Tools\Pickles.PowerShell\IKVM.OpenJDK.Remoting.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Remoting.dll
-		Tools\Pickles.PowerShell\IKVM.OpenJDK.Security.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Security.dll
-		Tools\Pickles.PowerShell\IKVM.OpenJDK.SwingAWT.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.SwingAWT.dll
-		Tools\Pickles.PowerShell\IKVM.OpenJDK.Text.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Text.dll
-		Tools\Pickles.PowerShell\IKVM.OpenJDK.Util.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.Util.dll
-		Tools\Pickles.PowerShell\IKVM.OpenJDK.XML.API.dll = Tools\Pickles.PowerShell\IKVM.OpenJDK.XML.API.dll
-		Tools\Pickles.PowerShell\IKVM.Runtime.dll = Tools\Pickles.PowerShell\IKVM.Runtime.dll
-		Tools\Pickles.PowerShell\IKVM.Runtime.JNI.dll = Tools\Pickles.PowerShell\IKVM.Runtime.JNI.dll
-		Tools\Pickles.PowerShell\log4net.dll = Tools\Pickles.PowerShell\log4net.dll
-		Tools\Pickles.PowerShell\log4net.xml = Tools\Pickles.PowerShell\log4net.xml
-		Tools\Pickles.PowerShell\MarkdownSharp.dll = Tools\Pickles.PowerShell\MarkdownSharp.dll
-		Tools\Pickles.PowerShell\MarkdownSharp.pdb = Tools\Pickles.PowerShell\MarkdownSharp.pdb
-		Tools\Pickles.PowerShell\MarkdownSharp.xml = Tools\Pickles.PowerShell\MarkdownSharp.xml
-		Tools\Pickles.PowerShell\NDesk.Options.dll = Tools\Pickles.PowerShell\NDesk.Options.dll
-		Tools\Pickles.PowerShell\Newtonsoft.Json.dll = Tools\Pickles.PowerShell\Newtonsoft.Json.dll
-		Tools\Pickles.PowerShell\Newtonsoft.Json.pdb = Tools\Pickles.PowerShell\Newtonsoft.Json.pdb
-		Tools\Pickles.PowerShell\Newtonsoft.Json.xml = Tools\Pickles.PowerShell\Newtonsoft.Json.xml
-		Tools\Pickles.PowerShell\NGenerics.dll = Tools\Pickles.PowerShell\NGenerics.dll
-		Tools\Pickles.PowerShell\NGenerics.pdb = Tools\Pickles.PowerShell\NGenerics.pdb
-		Tools\Pickles.PowerShell\NGenerics.xml = Tools\Pickles.PowerShell\NGenerics.xml
-		Tools\Pickles.PowerShell\Ninject.dll = Tools\Pickles.PowerShell\Ninject.dll
-		Tools\Pickles.PowerShell\Ninject.pdb = Tools\Pickles.PowerShell\Ninject.pdb
-		Tools\Pickles.PowerShell\Ninject.xml = Tools\Pickles.PowerShell\Ninject.xml
-		Tools\Pickles.PowerShell\Pickles.Library.dll = Tools\Pickles.PowerShell\Pickles.Library.dll
-		Tools\Pickles.PowerShell\Pickles.Library.pdb = Tools\Pickles.PowerShell\Pickles.Library.pdb
-		Tools\Pickles.PowerShell\Pickles.PowerShell.dll = Tools\Pickles.PowerShell\Pickles.PowerShell.dll
-		Tools\Pickles.PowerShell\Pickles.PowerShell.pdb = Tools\Pickles.PowerShell\Pickles.PowerShell.pdb
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{45929BCC-B277-4EBC-B307-A099492A7734}"
 EndProject
@@ -75,16 +40,49 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Infrastructure.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nerdsupport.Specs.Automation", "Specs\Nerdsupport.Specs.Automation\Nerdsupport.Specs.Automation.csproj", "{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deleporter", "Deleporter", "{9421EC46-A43F-4335-A407-EEA657355C0E}"
-	ProjectSection(SolutionItems) = preProject
-		Tools\Deleporter\Deleporter.dll = Tools\Deleporter\Deleporter.dll
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Domain.Repositories", "Src\Domain\NerdSupport.Domain.Repositories\NerdSupport.Domain.Repositories.csproj", "{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdSupport.Domain.Factories", "Src\Domain\NerdSupport.Domain.Factories\NerdSupport.Domain.Factories.csproj", "{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nerdsupport.Presentation.ViewModels", "Src\Presentation\Nerdsupport.Presentation.ViewModels\Nerdsupport.Presentation.ViewModels.csproj", "{11F869FC-E72C-4E1E-8BF7-CFFBA24DF7D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pickles.PowerShell", "Pickles.PowerShell", "{1EC1FFD8-31E0-4258-9C1D-916B335AF713}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Pickles.PowerShell\DocumentFormat.OpenXml.dll = Lib\Pickles.PowerShell\DocumentFormat.OpenXml.dll
+		Lib\Pickles.PowerShell\gherkin.dll = Lib\Pickles.PowerShell\gherkin.dll
+		Lib\Pickles.PowerShell\IKVM.AWT.WinForms.dll = Lib\Pickles.PowerShell\IKVM.AWT.WinForms.dll
+		Lib\Pickles.PowerShell\IKVM.OpenJDK.Beans.dll = Lib\Pickles.PowerShell\IKVM.OpenJDK.Beans.dll
+		Lib\Pickles.PowerShell\IKVM.OpenJDK.Core.dll = Lib\Pickles.PowerShell\IKVM.OpenJDK.Core.dll
+		Lib\Pickles.PowerShell\IKVM.OpenJDK.Jdbc.dll = Lib\Pickles.PowerShell\IKVM.OpenJDK.Jdbc.dll
+		Lib\Pickles.PowerShell\IKVM.OpenJDK.Media.dll = Lib\Pickles.PowerShell\IKVM.OpenJDK.Media.dll
+		Lib\Pickles.PowerShell\IKVM.OpenJDK.Misc.dll = Lib\Pickles.PowerShell\IKVM.OpenJDK.Misc.dll
+		Lib\Pickles.PowerShell\IKVM.OpenJDK.Naming.dll = Lib\Pickles.PowerShell\IKVM.OpenJDK.Naming.dll
+		Lib\Pickles.PowerShell\IKVM.OpenJDK.Remoting.dll = Lib\Pickles.PowerShell\IKVM.OpenJDK.Remoting.dll
+		Lib\Pickles.PowerShell\IKVM.OpenJDK.Security.dll = Lib\Pickles.PowerShell\IKVM.OpenJDK.Security.dll
+		Lib\Pickles.PowerShell\IKVM.OpenJDK.SwingAWT.dll = Lib\Pickles.PowerShell\IKVM.OpenJDK.SwingAWT.dll
+		Lib\Pickles.PowerShell\IKVM.OpenJDK.Text.dll = Lib\Pickles.PowerShell\IKVM.OpenJDK.Text.dll
+		Lib\Pickles.PowerShell\IKVM.OpenJDK.Util.dll = Lib\Pickles.PowerShell\IKVM.OpenJDK.Util.dll
+		Lib\Pickles.PowerShell\IKVM.OpenJDK.XML.API.dll = Lib\Pickles.PowerShell\IKVM.OpenJDK.XML.API.dll
+		Lib\Pickles.PowerShell\IKVM.Runtime.dll = Lib\Pickles.PowerShell\IKVM.Runtime.dll
+		Lib\Pickles.PowerShell\IKVM.Runtime.JNI.dll = Lib\Pickles.PowerShell\IKVM.Runtime.JNI.dll
+		Lib\Pickles.PowerShell\log4net.dll = Lib\Pickles.PowerShell\log4net.dll
+		Lib\Pickles.PowerShell\log4net.xml = Lib\Pickles.PowerShell\log4net.xml
+		Lib\Pickles.PowerShell\MarkdownSharp.dll = Lib\Pickles.PowerShell\MarkdownSharp.dll
+		Lib\Pickles.PowerShell\MarkdownSharp.pdb = Lib\Pickles.PowerShell\MarkdownSharp.pdb
+		Lib\Pickles.PowerShell\MarkdownSharp.xml = Lib\Pickles.PowerShell\MarkdownSharp.xml
+		Lib\Pickles.PowerShell\NDesk.Options.dll = Lib\Pickles.PowerShell\NDesk.Options.dll
+		Lib\Pickles.PowerShell\Newtonsoft.Json.dll = Lib\Pickles.PowerShell\Newtonsoft.Json.dll
+		Lib\Pickles.PowerShell\Newtonsoft.Json.pdb = Lib\Pickles.PowerShell\Newtonsoft.Json.pdb
+		Lib\Pickles.PowerShell\Newtonsoft.Json.xml = Lib\Pickles.PowerShell\Newtonsoft.Json.xml
+		Lib\Pickles.PowerShell\NGenerics.dll = Lib\Pickles.PowerShell\NGenerics.dll
+		Lib\Pickles.PowerShell\NGenerics.pdb = Lib\Pickles.PowerShell\NGenerics.pdb
+		Lib\Pickles.PowerShell\NGenerics.xml = Lib\Pickles.PowerShell\NGenerics.xml
+		Lib\Pickles.PowerShell\Ninject.dll = Lib\Pickles.PowerShell\Ninject.dll
+		Lib\Pickles.PowerShell\Ninject.pdb = Lib\Pickles.PowerShell\Ninject.pdb
+		Lib\Pickles.PowerShell\Ninject.xml = Lib\Pickles.PowerShell\Ninject.xml
+		Lib\Pickles.PowerShell\Pickles.Library.dll = Lib\Pickles.PowerShell\Pickles.Library.dll
+		Lib\Pickles.PowerShell\Pickles.Library.pdb = Lib\Pickles.PowerShell\Pickles.Library.pdb
+		Lib\Pickles.PowerShell\Pickles.PowerShell.dll = Lib\Pickles.PowerShell\Pickles.PowerShell.dll
+		Lib\Pickles.PowerShell\Pickles.PowerShell.pdb = Lib\Pickles.PowerShell\Pickles.PowerShell.pdb
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
@@ -119,10 +117,6 @@ Global
 		{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED5A2FD1-43A8-4FC1-80AC-CE121877B8A2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -139,7 +133,6 @@ Global
 		{1DBCA4F3-159E-4911-A002-CE1D17A7996F} = {E3CA68E7-7F36-4C56-8012-254BAEAE36F4}
 		{40D43AC0-D2BE-4B37-82B3-310FC0FBAABA} = {E3CA68E7-7F36-4C56-8012-254BAEAE36F4}
 		{B9FEE2CE-4805-4DAE-8B90-84BD861A45A1} = {E3CA68E7-7F36-4C56-8012-254BAEAE36F4}
-		{738606B1-78D2-47B2-A86C-E119060688E4} = {E3CA68E7-7F36-4C56-8012-254BAEAE36F4}
 		{4AE1F120-A4A5-4804-BDE8-198E9C88851B} = {1DBCA4F3-159E-4911-A002-CE1D17A7996F}
 		{CEA5FDDA-DDC6-4E59-A371-3516A04A8207} = {1DBCA4F3-159E-4911-A002-CE1D17A7996F}
 		{45929BCC-B277-4EBC-B307-A099492A7734} = {1DBCA4F3-159E-4911-A002-CE1D17A7996F}
@@ -148,10 +141,8 @@ Global
 		{67C8B33C-A6AE-421F-BF79-3FB8F37A64C0} = {4AE1F120-A4A5-4804-BDE8-198E9C88851B}
 		{11F869FC-E72C-4E1E-8BF7-CFFBA24DF7D3} = {4AE1F120-A4A5-4804-BDE8-198E9C88851B}
 		{6E22AE8C-BE43-4A75-BD38-11E828D1B61C} = {CEA5FDDA-DDC6-4E59-A371-3516A04A8207}
-		{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A} = {CEA5FDDA-DDC6-4E59-A371-3516A04A8207}
 		{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7} = {CEA5FDDA-DDC6-4E59-A371-3516A04A8207}
-		{1DAF19CC-E1FA-4191-8B84-C4DA59CA313F} = {738606B1-78D2-47B2-A86C-E119060688E4}
-		{9421EC46-A43F-4335-A407-EEA657355C0E} = {738606B1-78D2-47B2-A86C-E119060688E4}
+		{1EC1FFD8-31E0-4258-9C1D-916B335AF713} = {B9FEE2CE-4805-4DAE-8B90-84BD861A45A1}
 		{1B760912-A325-450E-BE0A-BA43AB0E117F} = {45929BCC-B277-4EBC-B307-A099492A7734}
 		{2F500258-786D-48EB-8098-B4B27B43C489} = {45929BCC-B277-4EBC-B307-A099492A7734}
 	EndGlobalSection

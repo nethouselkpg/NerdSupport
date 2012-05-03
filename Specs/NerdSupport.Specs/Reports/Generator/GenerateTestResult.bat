@@ -4,3 +4,4 @@ if Exist TestResult.trx del TestResult.trx
 
 "%ProgramFiles(x86)%\TechTalk\SpecFlow\SpecFlow.exe" mstestexecutionreport ../../NerdSupport.Specs.csproj /testResult:TestResult.trx /out:../Html/ImplementationReport.html
 
+pause

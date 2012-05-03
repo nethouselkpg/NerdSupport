@@ -31,8 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,7 +48,16 @@
     <Compile Include="DygnsRegel.cs" />
     <Compile Include="Fraga.cs" />
     <Compile Include="Avsandar.cs" />
+    <Compile Include="FragaBesvaradEvent.cs" />
     <Compile Include="FrageKo.cs" />
+    <Compile Include="Repositories\BullshitDb.cs" />
+    <Compile Include="Repositories\DatabaseContext.cs" />
+    <Compile Include="Repositories\DataContextFactory.cs" />
+    <Compile Include="Repositories\IBullshitDb.cs" />
+    <Compile Include="Repositories\IDataContextFactory.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\RepositoryInitializer.cs" />
     <Compile Include="StandardRegel.cs" />
     <Compile Include="Nord.cs" />
     <Compile Include="IAggregateRoot.cs" />
@@ -53,11 +67,21 @@
     <Compile Include="SLARegel.cs" />
     <Compile Include="SupportBrev.cs" />
     <Compile Include="AttaTimmarsRegel.cs" />
+    <Compile Include="SvaraPaFragaCommand.cs" />
+    <Compile Include="SvaraPaFragaCommandHandler.cs" />
+    <Compile Include="TjanaPengar.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="ArendeModell.cd" />
+    <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\NerdSupport.Infrastructure.EventBus\NerdSupport.Infrastructure.Bus.csproj">
+      <Project>{2F500258-786D-48EB-8098-B4B27B43C489}</Project>
+      <Name>NerdSupport.Infrastructure.Bus</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

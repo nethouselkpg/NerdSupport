@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NerdSupport.Infrastructure.Bus;
+using NerdSupport.Domain.Model;
 
 namespace NerdSupport.Infrastructure.Configuration
 {
@@ -10,7 +11,8 @@ namespace NerdSupport.Infrastructure.Configuration
     {
         public static void Init()
         { 
-            //BusConfiguration.Add<>();
+            BusConfiguration.Add<SvaraPaFragaCommandHandler>();
+            BusConfiguration.Add<TjanaPengar>();
         }
     }
 }

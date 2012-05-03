@@ -45,12 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseContext.cs" />
-    <Compile Include="DataContextFactory.cs" />
-    <Compile Include="IDataContextFactory.cs" />
-    <Compile Include="IRepository.cs" />
-    <Compile Include="Repository.cs" />
-    <Compile Include="RepositoryInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,7 +52,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\NerdSupport.Domain.Model\NerdSupport.Domain.Model.csproj">
+    <ProjectReference Include="..\NerdSupport.Domain.Model\NerdSupport.Domain.Model.csproj">
       <Project>{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}</Project>
       <Name>NerdSupport.Domain.Model</Name>
     </ProjectReference>

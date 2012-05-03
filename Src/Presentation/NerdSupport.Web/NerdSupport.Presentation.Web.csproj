@@ -74,6 +74,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -349,13 +350,13 @@
       <Project>{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}</Project>
       <Name>NerdSupport.Domain.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Domain\NerdSupport.Domain.Repositories\NerdSupport.Domain.Repositories.csproj">
-      <Project>{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}</Project>
-      <Name>NerdSupport.Domain.Repositories</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Infrastructure\NerdSupport.Infrastructure.Configuration\NerdSupport.Infrastructure.Configuration.csproj">
       <Project>{1B760912-A325-450E-BE0A-BA43AB0E117F}</Project>
       <Name>NerdSupport.Infrastructure.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\NerdSupport.Infrastructure.EventBus\NerdSupport.Infrastructure.Bus.csproj">
+      <Project>{2F500258-786D-48EB-8098-B4B27B43C489}</Project>
+      <Name>NerdSupport.Infrastructure.Bus</Name>
     </ProjectReference>
     <ProjectReference Include="..\Nerdsupport.Presentation.ViewModels\Nerdsupport.Presentation.ViewModels.csproj">
       <Project>{11F869FC-E72C-4E1E-8BF7-CFFBA24DF7D3}</Project>

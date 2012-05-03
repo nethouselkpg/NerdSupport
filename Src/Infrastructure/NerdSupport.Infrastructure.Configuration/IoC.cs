@@ -10,6 +10,7 @@ using NerdSupport.Domain.Factories;
 using System;
 using System.Collections.Generic;
 using NerdSupport.Domain.Services;
+using System.Linq;
 
 namespace NerdSupport.Infrastructure.Configuration
 {
@@ -30,7 +31,10 @@ namespace NerdSupport.Infrastructure.Configuration
         public static IUnityContainer Map()
         {
             _container.RegisterType<IControllerActivator, ControllerActivator>();
+
+            _container.RegisterType<ISubscriptionService, BusConfiguration>();
             _container.RegisterType<IMessageBus, MessageBus>();
+
             _container.RegisterType<IDataContextFactory, DataContextFactory>();
             _container.RegisterType(typeof(IRepository<>), typeof(Repository<>));
             _container.RegisterType(typeof(IFactory<ServiceAvtal>), typeof(AvtalsFactory));
@@ -55,7 +59,8 @@ namespace NerdSupport.Infrastructure.Configuration
         {
             if (_container.IsRegistered(fromType) && !_overriddenMappings.ContainsKey(fromType))
             {
-                _overriddenMappings.Add(fromType, @object.GetType());
+                var registration = _container.Registrations.SingleOrDefault(r => r.RegisteredType == fromType);
+                _overriddenMappings.Add(fromType, registration.MappedToType);
             }
             _container.RegisterInstance(fromType, null, @object, new HierarchicalLifetimeManager());
         }

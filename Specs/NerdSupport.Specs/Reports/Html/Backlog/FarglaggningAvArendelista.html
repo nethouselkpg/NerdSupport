@@ -7,16 +7,11 @@
     <link rel="stylesheet" href="../print.css" type="text/css" media="print" />
     <script src="../scripts/jquery.js" type="text/javascript"></script>
     <script src="../scripts/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="../scripts/scripts.js" type="text/javascript"></script>
     <script type="text/javascript">
 $(document).ready(function() {
-  $('.datatable').dataTable({
-    "bSort": false,
-    "bInfo": false,
-    "bFilter": false,
-    "bPaginate": false,
-    "sScrollY": "100%",
-    "sScrollX": "90%"
-  });
+  initializeDataTable();
+  initializeToc();
 });
 </script>
   </head>
@@ -24,83 +19,81 @@ $(document).ready(function() {
     <div id="container">
       <div id="top" />
       <div id="toc">
+        <p class="tocCollapser" title="Collapse Table of Content">«</p>
         <ul class="features">
+          <li class="file" id="root">
+            <a href="../index.html">Home</a>
+          </li>
           <li>
-            <div class="directory">Backlog</div>
+            <div class="directory">
+              <a href="index.html">Backlog</a>
+            </div>
             <ul class="features">
-              <div class="file">
-                <li>
-                  <a href="#">Färgläggning av ärenden i lista</a>
-                </li>
-              </div>
-              <div class="file">
-                <li>
-                  <a href="HittaEmailIInkorg.html">Filtrera e-mail i inkorg</a>
-                </li>
-              </div>
-              <div class="file">
-                <li>
-                  <a href="PrisRegel.html">Serviceregel för att prioritera kunder som betalar mer</a>
-                </li>
-              </div>
-              <div class="file">
-                <li>
-                  <a href="SkapaArendeFranEmail.html">Skapa ärende från e-mail</a>
-                </li>
-              </div>
-              <div class="file">
-                <li>
-                  <a href="SkapaArendeManuellt.html">Skapa ärende manuellt</a>
-                </li>
-              </div>
-              <div class="file">
-                <li>
-                  <a href="StangArende.html">Stäng ärende</a>
-                </li>
-              </div>
-              <div class="file">
-                <li>
-                  <a href="TidServiceRegel.html">Serviceregel för att prioritera kunder som väntat länge</a>
-                </li>
-              </div>
-              <div class="file">
-                <li>
-                  <a href="ValideraForetagIArende.html">Validera företag i ärende</a>
-                </li>
-              </div>
-              <div class="file">
-                <li>
-                  <a href="VIPServiceRegel.html">Serviceregel för att prioritera kunder som är VIP</a>
-                </li>
-              </div>
+              <li class="file">
+                <span class="current">Färgläggning av ärenden i lista</span>
+              </li>
+              <li class="file">
+                <a href="HittaEmailIInkorg.html">Filtrera e-mail i inkorg</a>
+              </li>
+              <li class="file">
+                <a href="PrisRegel.html">Serviceregel för att prioritera kunder som betalar mer</a>
+              </li>
+              <li class="file">
+                <a href="SkapaArendeFranEmail.html">Skapa ärende från e-mail</a>
+              </li>
+              <li class="file">
+                <a href="SkapaArendeManuellt.html">Skapa ärende manuellt</a>
+              </li>
+              <li class="file">
+                <a href="StangArende.html">Stäng ärende</a>
+              </li>
+              <li class="file">
+                <a href="TidServiceRegel.html">Serviceregel för att prioritera kunder som väntat länge</a>
+              </li>
+              <li class="file">
+                <a href="ValideraForetagIArende.html">Validera företag i ärende</a>
+              </li>
+              <li class="file">
+                <a href="VIPServiceRegel.html">Serviceregel för att prioritera kunder som är VIP</a>
+              </li>
             </ul>
           </li>
           <li>
-            <div class="directory">Current Iteration</div>
+            <div class="directory">
+              <a href="../CurrentIteration/index.html">Current Iteration</a>
+            </div>
             <ul class="features">
-              <div class="file">
-                <li>
-                  <a href="../CurrentIteration/PrioriteringAvArende.html">Prioritering av arenden</a>
-                </li>
-              </div>
-              <div class="file">
-                <li>
-                  <a href="../CurrentIteration/VisaFraga.html">VIsa fraga</a>
-                </li>
-              </div>
+              <li class="file">
+                <a href="../CurrentIteration/TjanaPengar.html">Tjana pengar</a>
+              </li>
             </ul>
           </li>
           <li>
-            <div class="directory">obj</div>
+            <div class="directory">
+              <a href="../Done/index.html">Done</a>
+            </div>
+            <ul class="features">
+              <li class="file">
+                <a href="../Done/PrioriteringAvArende.html">Prioritering av frågor</a>
+              </li>
+              <li class="file">
+                <a href="../Done/VisaFraga.html">VIsa fraga</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="directory">
+              <a href="../obj/index.html">obj</a>
+            </div>
             <ul class="features">
               <li>
-                <div class="directory">Debug</div>
+                <div class="directory">
+                  <a href="../obj/Debug/index.html">Debug</a>
+                </div>
                 <ul class="features">
-                  <div class="file">
-                    <li>
-                      <a href="../obj/Debug/NerdSupport.Specs.csproj.FileListAbsolute.html">Nerd Support Specscsproj File List Absolute</a>
-                    </li>
-                  </div>
+                  <li class="file">
+                    <a href="../obj/Debug/NerdSupport.Specs.csproj.FileListAbsolute.html">Nerd Support Specscsproj File List Absolute</a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -109,13 +102,13 @@ $(document).ready(function() {
       </div>
       <div id="feature">
         <h1>Färgläggning av ärenden i lista</h1>
-        <div class="description" xmlns="http://www.w3.org/1999/xhtml">
+        <div class="description">
           <p>För att kunna överskåda vad jag ska jobba med
 Som en handläggare
 Så vill jag en färgkodad lista som hjälper mig att prioritera</p>
         </div>
         <ul id="scenarios">
-          <li id="0" class="scenario">
+          <li class="scenario">
             <div class="scenario-heading">
               <h2>Ärende med prio 1</h2>
             </div>
@@ -132,7 +125,7 @@ Så vill jag en färgkodad lista som hjälper mig att prioritera</p>
               </ul>
             </div>
           </li>
-          <li id="1" class="scenario">
+          <li class="scenario">
             <div class="scenario-heading">
               <h2>Sortering</h2>
             </div>
@@ -153,8 +146,8 @@ Så vill jag en färgkodad lista som hjälper mig att prioritera</p>
       </div>
       <div id="footer">
         <p>Test results generated for: NerdSupport, version 0.1</p>
-        <p>Pickled on: 25 mars 2012 01:03:53</p>
-        <p>Produced by Pickles, version 0.5.0.0</p>
+        <p>Pickled on: 25 april 2012 03:31:30</p>
+        <p>Produced by Pickles, version 0.6.0.0</p>
       </div>
     </div>
   </body>

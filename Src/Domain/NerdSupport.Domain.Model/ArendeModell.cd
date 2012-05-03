@@ -4,19 +4,19 @@
     <Position X="13.25" Y="0.5" Width="2" />
     <AssociationLine Name="Avsandare" Type="NerdSupport.Domain.Model.Avsandar" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="13.25" Y="1.154" />
-        <Point X="12.875" Y="1.154" />
+        <Point X="13.25" Y="1.396" />
+        <Point X="12.875" Y="1.396" />
         <Point X="12.875" Y="1.75" />
         <Point X="8.25" Y="1.75" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAQAAAAAAAAABABAAAAAAAAAACACAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAQAAAAAAAAAAABIAAAAAAAAACACIAACA=</HashCode>
       <FileName>Fraga.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Avsandare" />
-      <Property Name="Handlaggare" />
+      <Property Name="Nord" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
@@ -52,9 +52,10 @@
   <Class Name="NerdSupport.Domain.Model.Nord">
     <Position X="15.5" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAgACAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Nord.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="NerdSupport.Domain.Model.DygnsRegel" Collapsed="true">
     <Position X="5" Y="5.75" Width="1.5" />

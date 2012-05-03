@@ -9,11 +9,12 @@ namespace NerdSupport.Domain.Model
     {
         private readonly List<Fraga> _frågor;
 
-
         public FrageKo(List<Fraga> frågor)
         {
             _frågor = frågor;
         }
+
+        public long Id { get; set; }
 
         public List<Fraga> Frågor
         {

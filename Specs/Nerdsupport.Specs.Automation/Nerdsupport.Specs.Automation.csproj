@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Deleporter">
+      <HintPath>..\..\Tools\Deleporter\Deleporter.dll</HintPath>
+    </Reference>
     <Reference Include="Interop.SHDocVw">
       <HintPath>..\..\packages\WatiN.2.1.0\lib\net40\Interop.SHDocVw.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -42,6 +45,15 @@
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq">
+      <HintPath>..\..\packages\Moq.3.1.416.3\lib\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Ploeh.AutoFixture">
+      <HintPath>..\..\packages\AutoFixture.2.9.2\lib\Ploeh.AutoFixture.dll</HintPath>
+    </Reference>
+    <Reference Include="Ploeh.SemanticComparison">
+      <HintPath>..\..\packages\AutoFixture.2.9.2\lib\Ploeh.SemanticComparison.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,19 +61,41 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.SpecFlow">
+      <HintPath>..\..\Lib\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
     <Reference Include="WatiN.Core">
       <HintPath>..\..\packages\WatiN.2.1.0\lib\net40\WatiN.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArendeWorkflow.cs" />
+    <Compile Include="TestDataCreator.cs" />
+    <Compile Include="StepDefinition.cs" />
+    <Compile Include="NordWorkflow.cs" />
     <Compile Include="ObjectCloner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StartPage.cs" />
+    <Compile Include="RepositoryMocker.cs" />
+    <Compile Include="SpecFlowHelper.cs" />
+    <Compile Include="StartView.cs" />
+    <Compile Include="TypeSwitch.cs" />
     <Compile Include="Workflow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Src\Domain\NerdSupport.Domain.Factories\NerdSupport.Domain.Factories.csproj">
+      <Project>{EB60A426-2ECD-4430-AEBB-F5D1EE0EEBF7}</Project>
+      <Name>NerdSupport.Domain.Factories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Src\Domain\NerdSupport.Domain.Model\NerdSupport.Domain.Model.csproj">
+      <Project>{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}</Project>
+      <Name>NerdSupport.Domain.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Src\Infrastructure\NerdSupport.Infrastructure.Configuration\NerdSupport.Infrastructure.Configuration.csproj">
+      <Project>{1B760912-A325-450E-BE0A-BA43AB0E117F}</Project>
+      <Name>NerdSupport.Infrastructure.Configuration</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

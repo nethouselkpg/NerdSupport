@@ -7,5 +7,6 @@ namespace NerdSupport.Domain.Model
 {
     public interface IAggregateRoot
     {
+        long Id { get; set; }
     }
 }

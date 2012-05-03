@@ -49,14 +49,27 @@
   margin: 0 0 1em 0; 
 }
 
+
 #toc ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;  }
+  list-style-type: none;
+}
+
   #toc ul li a {
-    text-decoration: none; }
+    text-decoration: none;
+      color: gray;
+  }
+
+  #toc .current
+  {
+      font-style: oblique;
+  }
+  
   #toc ul li a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+  color: #000000;
+  }
     
 #toc .directory {
   padding: 5px 10px 6px;
@@ -65,9 +78,33 @@
   border-top: 1px solid #fff;
   font-weight: bold;
 }
+
+#toc .directory a{
+    color: black;
+}
 #toc .file {
-  padding: 3px 10px 4px;
+  padding: 3px 10px 4px 20px;
   border-bottom: 1px solid #E8E8e8;
+}
+
+#toc.collapsed ul{
+  display: none;
+}
+
+#toc.collapsed{
+  border-right-width: 0;
+}
+          
+p.tocCollapser{
+  color: gray;
+  cursor: pointer;
+  float: right;
+  padding-right: 1em;
+}
+
+p.tocCollapser:hover{
+  color: black;
+  cursor: pointer;
 }
 
 /*************************************************************************
@@ -85,6 +122,48 @@
 { 
   margin: 0 0 .5em 0;
   line-height: 105%;
+}
+
+/*************************************************************************
+ * Feature index
+ *************************************************************************/
+
+#feature li{
+    margin-bottom: 1em;
+}
+
+#feature span.title
+{
+    font-size: large;
+    font-weight: bold;
+    color: #000000;
+    display: block;
+}
+
+#feature a {
+    text-decoration: none;
+}
+
+#feature a:hover span.title{
+    text-decoration: underline;
+}
+
+#feature span.separator
+{
+    display: none;
+}
+
+#feature span.description{
+    display: block;
+    color: black;
+}
+
+#feature div.folderDescription {
+    margin-bottom: 2em;
+}
+
+#feature div.folderDescription li{
+    list-style-type: disc;
 }
 
 /*************************************************************************

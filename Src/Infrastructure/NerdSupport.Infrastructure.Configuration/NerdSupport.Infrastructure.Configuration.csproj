@@ -79,10 +79,6 @@
       <Project>{6E22AE8C-BE43-4A75-BD38-11E828D1B61C}</Project>
       <Name>NerdSupport.Domain.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Domain\NerdSupport.Domain.Repositories\NerdSupport.Domain.Repositories.csproj">
-      <Project>{A5C0A91D-76EE-41BB-8E02-B2B5BCCBAB4A}</Project>
-      <Name>NerdSupport.Domain.Repositories</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Presentation\Nerdsupport.Presentation.ViewModels\Nerdsupport.Presentation.ViewModels.csproj">
       <Project>{11F869FC-E72C-4E1E-8BF7-CFFBA24DF7D3}</Project>
       <Name>Nerdsupport.Presentation.ViewModels</Name>

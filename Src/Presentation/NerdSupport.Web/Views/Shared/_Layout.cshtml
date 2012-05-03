@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
     <link href="@Url.Content("~/Content/Production.css?v=2")" rel="stylesheet" type="text/css" media="screen" />
-     <link href="@Url.Content("~/Content/css/uniform.default.css")" rel="stylesheet" type="text/css" media="screen" />
+    <link href="@Url.Content("~/Content/css/uniform.default.css")" rel="stylesheet" type="text/css" media="screen" />
     <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.11/themes/humanity/jquery-ui.css"
         rel="stylesheet" type="text/css" />
     <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.5.2.min.js" type="text/javascript"></script>
@@ -18,7 +18,7 @@
     </script>
     <script src="@Url.Content("~/Scripts/modernizr-1.7.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/yepnope.1.0.1-min.js")" type="text/javascript"></script>
-     <script src="@Url.Content("~/Content/jquery.uniform.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/jquery.uniform.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/date.format.js")" type="text/javascript"></script>
     <script src="http://cdn.uservoice.com/javascripts/widgets/tab.js" type="text/javascript"></script>
     @RenderSection("HeadArea", required: false)
@@ -32,7 +32,7 @@
                 </h1>
             </div>
             <div id="logindisplay">
-             
+                Just nu har du <span id="pengar">@ViewBag.Planboken</span> kronor i din plånbok
             </div>
             <nav>
                 <ul id="menu">
@@ -48,7 +48,6 @@
         <footer>
             Layout hijacked from nerddinner.com
         </footer>
-
         <script>
             $(document).ready(function () {
                 $(function () { $("input, textarea").uniform(); });

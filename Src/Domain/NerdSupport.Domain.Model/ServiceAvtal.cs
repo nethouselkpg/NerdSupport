@@ -8,6 +8,11 @@ namespace NerdSupport.Domain.Model
     [Serializable]
     public class ServiceAvtal : IAggregateRoot
     {
+        public ServiceAvtal()
+        {
+            ServiceRegler = new List<SLARegel>();
+        }
+
         public long Id { get; set; }
 
         public List<SLARegel> ServiceRegler

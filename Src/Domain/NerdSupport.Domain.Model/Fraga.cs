@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Runtime.Serialization;
 
 namespace NerdSupport.Domain.Model
 {
@@ -16,9 +17,9 @@ namespace NerdSupport.Domain.Model
         public Avsandar Avsandare { get; set; }
 
         /// <summary>
-        /// Den person som handlägger ärendet
+        /// Den person som besvarat frågan.
         /// </summary>
-        public Nord Handlaggare
+        public Nord Nord
         {
             get;
             set;
@@ -34,7 +35,15 @@ namespace NerdSupport.Domain.Model
         /// </summary>
         public string Fråga { get; set; }
 
+        /// <summary>
+        /// Svar på frågan
+        /// </summary>
+        public string Svar { get; set; }
+
         public int Prioritet { get; set; }
 
+      
+
+        public bool IsBesvarad { get; set; }
     }
 }

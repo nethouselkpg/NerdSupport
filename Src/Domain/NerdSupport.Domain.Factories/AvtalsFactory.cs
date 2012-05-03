@@ -28,6 +28,8 @@ namespace NerdSupport.Domain.Factories
         {
             var avtal = _repository.GetById(id);
 
+            if (avtal == null)
+                return Skapa();
 
             for (int i = avtal.ServiceRegler.Count - 1; i >= 0; i--)
             {

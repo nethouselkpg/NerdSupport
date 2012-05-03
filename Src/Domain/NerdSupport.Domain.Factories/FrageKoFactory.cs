@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NerdSupport.Domain.Model;
-using NerdSupport.Domain.Repositories;
 using NerdSupport.Domain.Services;
+using NerdSupport.Domain.Repositories;
 
 namespace NerdSupport.Domain.Factories
 {
